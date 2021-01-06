@@ -1,0 +1,9 @@
+vendor
+_site
+_site-production
+Gemfile.lock
+debug.log
+.vscode
+punkterechner/build
+punkterechner/node_modules
+build

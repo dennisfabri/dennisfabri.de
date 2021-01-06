@@ -1,0 +1,125 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: dennisfabri.de
+email: info@dennisfabri.de
+author: Dennis Fabri
+tagline: Softwareentwicklung im Rettungssport
+description: > # this means to ignore newlines until "baseurl:"
+  JAuswertung ist ein Auswertungsporgramm für Wettkämpfe nach aktuellem DLRG-Regelwerk.
+
+# DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
+baseurl: "/web" # the subpath of your site, e.g. /blog
+startpage: "/neues.html"
+
+# This is mostly for testing
+url: "https://www.dennisfabri.de" # the base hostname & protocol for your site
+phpurl: "https://www.dennisfabri.de"
+domain: "dennisfabri.de"
+
+lang: de_DE
+
+# Social (First three Required)
+repo: "https://github.com/dennisfabri/dennisfabri.de"
+github_user: "dennisfabri"
+github_repo: "dennisfabri.de"
+
+# Optional
+twitter:
+linkedin:
+dockerhub:
+
+# JAuswertung, DLRG, Software, Rettungssport, Protokoll, Auswertung, Gelsenkirchen, Westfalen, Protokoll, Punkte, Punktetabellen
+
+social:
+  name: Dennis Fabri
+  links:
+    - https://github.com/dennisfabri
+    - https://sourceforge.net/u/maverix/profile/
+    - https://play.google.com/store/apps/developer?id=Dennis+Fabri
+    - https://www.linkedin.com/in/dennis-fabri/
+    - https://www.xing.com/profile/Dennis_Fabri/
+
+# Should there be feedback buttons at the bottom of pages?
+feedback: false
+
+# Link to a privacy policy in footer, uncomment and define if wanted
+privacy: home/datenschutz.html
+
+# Link to a privacy policy in footer, uncomment and define if wanted
+impress: home/impressum.html
+
+# google-analytics: UA-XXXXXXXXXX
+# Image and (square) dimension for logo (don't start with /)
+# If commented, will use material hat theme
+logo: "assets/img/logo.svg"
+logo_pixels: 30
+color: "#0077BB"
+# color: "#8c1515" # primary color for header, buttons
+
+# Build settings
+markdown: kramdown
+
+# If you add tags to pages, define this variable to link them to some external search
+# If you want to link to tags locally on the site, leave this commented out
+# tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
+tag_color: primary # danger, success, warning, primary, info, secondary
+
+accentColor: red # purple, green, etc.
+themeColor: red # purple, green, blue, orange, purple, grey
+fixedNav: 'true' # true or false
+
+#permalink: /:year/:title/
+permalink: /:year/:month-:day-:slug:output_ext
+markdown: kramdown
+exclude: [_site, _site-production, CHANGELOG.md, LICENSE, README.md, vendor, Gemfile, Gemfile.lock, build-production.cmd, debug.log, assets/php]
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path
+
+# Defaults
+defaults:
+  - scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: page
+      image: "assets/img/logo.svg"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      image: "assets/img/logo.svg"
+  -
+    scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+      image: "assets/img/logo.svg"
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+    style: compressed  

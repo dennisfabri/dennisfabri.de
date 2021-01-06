@@ -1,0 +1,34 @@
+.post-footer {
+    color: #99a2c2;
+    font-size: small;
+}
+
+footer * a:link {
+    color: #FFFFFF;
+}
+
+footer * a:visited {
+    color: #CCD5F5;
+}
+
+footer * a:hover {
+    color: #99a2c2;
+}
+
+footer * a:active {
+    color: #FFFFFF;
+}
+
+footer * small {
+    color: #FFFFFF;
+}
+
+.c-archives__list {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 1em;
+}
+
+.search-results {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0em;
+}
