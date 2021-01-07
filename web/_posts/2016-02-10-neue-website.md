@@ -4,7 +4,7 @@ title: Neue Website
 date: 2016-02-10 00:00
 category: Homepage
 author: Dennis Fabri
-tags: []
+tags: [Homepage]
 summary: 
 ---
 

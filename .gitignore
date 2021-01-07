@@ -7,3 +7,6 @@ debug.log
 punkterechner/build
 punkterechner/node_modules
 build
+web/.jekyll-cache
+web/.jekyll-metadata
+web/node_modules

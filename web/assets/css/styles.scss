@@ -1,0 +1,12 @@
+---
+layout: null
+excluded_in_search: true
+---
+
+$site-color : {{ site.color }};
+
+@import "_includes/css/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "_includes/css/main.scss";
+@import "_includes/css/palette.scss";
+@import "_includes/css/custom.scss";

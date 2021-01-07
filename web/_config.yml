@@ -85,7 +85,40 @@ fixedNav: 'true' # true or false
 #permalink: /:year/:title/
 permalink: /:year/:month-:day-:slug:output_ext
 markdown: kramdown
-exclude: [_site, _site-production, CHANGELOG.md, LICENSE, README.md, vendor, Gemfile, Gemfile.lock, build-production.cmd, debug.log, assets/php]
+exclude:
+  - _site
+  - CHANGELOG.md
+  - LICENSE
+  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - build-production.cmd
+  - debug.log
+  - assets/php
+  - package.json
+  - package-lock.json
+
+include:
+  - node_modules/jquery/dist/jquery.slim.min.js
+  - node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
+  - node_modules/@fortawesome/fontawesome-free/css/solid.min.css
+  - node_modules/@fortawesome/fontawesome-free/css/brands.min.css
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff
+  - node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2
 
 # Collections
 collections:
@@ -120,6 +153,3 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-
-sass:
-    style: compressed  

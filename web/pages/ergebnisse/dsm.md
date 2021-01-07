@@ -85,7 +85,7 @@ stellen einen der ersten Höhepunkte in jedem Wettkampfjahr dar.
 <sup>1)</sup> Diese Wettkämpfe wurden wegen des Ausbruchs von SARS-CoV-2 (Corona) abgesagt.
 
 Die Daten stammen zum Teil von der Internetseite [rettungssport.com](https://www.rettungssport.com). Der ursprüngliche Link
-```https://www.rettungssport.com/home/specials/specials-anzeigen/article/dsm-alle-infos.html``` wurde am 05.06.2009
+'```https://www.rettungssport.com/home/specials/specials-anzeigen/article/dsm-alle-infos.html```' wurde am 05.06.2009
 geprüft und ist nicht mehr verfügbar.
 
 [Fehler melden](mailto:info@dennisfabri.de)

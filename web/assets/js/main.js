@@ -49,7 +49,7 @@ layout: null
                         return
                     }
                     var query = $(this).val();
-                    var searchPage = "{{ site.url }}{{ site.baseurl }}/suche/?q=" + query;
+                    var searchPage = "{{ site.url }}{{ site.baseurl }}/suche.html?q=" + query;
                     document.location = searchPage;
                     return false;
                 });

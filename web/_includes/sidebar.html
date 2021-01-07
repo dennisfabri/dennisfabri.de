@@ -1,8 +1,8 @@
 <div id="td-sidebar-menu" class="td-sidebar__inner">  
   <form class="td-sidebar__search d-flex align-items-center">
-  <!--
+    {% if page.title != "Suche" %} 
     <input type="search" class="form-control td-search-input" placeholder="&#xf002 Suchen…" aria-label="Suchen…" autocomplete="off" style="width: 90%;" />
-  -->
+    {% endif%}
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation"></button>
   </form>  
   <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">

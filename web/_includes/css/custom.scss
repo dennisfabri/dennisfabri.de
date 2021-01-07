@@ -1,0 +1,74 @@
+body { 
+    font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+.bg-blue {
+    background-color: $site-color!important;
+}
+
+.post-footer {
+    color: #99a2c2;
+    font-size: small;
+}
+
+footer * a:link {
+    color: #FFFFFF;
+}
+
+footer * a:visited {
+    color: #CCD5F5;
+}
+
+footer * a:hover {
+    color: #99a2c2;
+}
+
+footer * a:active {
+    color: #FFFFFF;
+}
+
+footer * small {
+    color: #FFFFFF;
+}
+
+.c-archives__list {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 1em;
+}
+
+.search-results {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0em;
+}
+
+@supports ((-webkit-hyphens: auto)
+        or (   -moz-hyphens: auto)
+        or (    -ms-hyphens: auto)
+        or (        hyphens: auto)) {
+
+    /*
+     * Das lang Attribute ist sehr wichtig für die automatische Silbentrennung.
+     * Daher erlaube ich es nur im Zusammenhang mit bestimmten Sprachen.
+     * Mozilla hat eine schöne Liste mit welchen Sprachen in welchem Browser unterstützt wird:
+     * https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens#Browser_compatibility
+     */
+    [lang^=de] p,
+    [lang^=en] p {
+        text-align: justify;
+        -webkit-hyphens: auto;
+           -moz-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
+    }
+
+    /*
+     * Es können bestimmte Elemente in Paragrafen vor kommen
+     * auf denen eine Silbentrennung nicht sehr schön ist.
+     */
+    a, b, abbr, strong {
+        -webkit-hyphens: manual;
+           -moz-hyphens: manual;
+            -ms-hyphens: manual;
+                hyphens: manual;
+    }
+}
