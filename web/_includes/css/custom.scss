@@ -2,6 +2,10 @@ body {
     font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 }
 
+p {
+    text-align: justify;
+}
+
 .bg-blue {
     background-color: $site-color!important;
 }
@@ -54,7 +58,6 @@ footer * small {
      */
     [lang^=de] p,
     [lang^=en] p {
-        text-align: justify;
         -webkit-hyphens: auto;
            -moz-hyphens: auto;
             -ms-hyphens: auto;

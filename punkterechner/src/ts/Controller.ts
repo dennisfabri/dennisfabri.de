@@ -3,6 +3,8 @@ import { Types } from "./Types";
 import { Sexes } from "./Sexes";
 import { Agegroup } from "./Agegroup";
 import { Year } from "./Year";
+import { YearAgegroup, TimesHistory } from "./TimesHistory";
+import { Chart } from "../../node_modules/chart.js/dist/Chart.bundle.js";
 
 export class Controller {
     private parent: HTMLElement | null;
@@ -10,7 +12,9 @@ export class Controller {
 
     private settingsId: string;
     private formId: string;
-    private yearId: string;
+    private chartId: string;
+    private historyId: string;
+
     private typeId: string;
     private agegroupId: string;
     private sexId: string;
@@ -19,15 +23,19 @@ export class Controller {
 
     private calculator: Calculator;
 
+    private calculators: Calculator[];
+
     constructor() {
         this.data = [];
         this.calculator = new Calculator();
+        this.calculators = [];
 
         this.parent = null;
         this.prefix = "";
         this.settingsId = "";
         this.formId = "";
-        this.yearId = "";
+        this.chartId = "";
+        this.historyId = "";
         this.typeId = "";
         this.agegroupId = "";
         this.sexId = "";
@@ -36,6 +44,10 @@ export class Controller {
     public configure(parentId: string, data: Year[]): void {
         this.data = data;
 
+        this.data.forEach(element => {
+            this.calculators.push(new Calculator());
+        });
+
         if (document != null) {
             this.parent = document.getElementById(parentId);
         }
@@ -43,7 +55,8 @@ export class Controller {
 
         this.settingsId = this.prefix + "settings";
         this.formId = this.prefix + "form";
-        this.yearId = this.prefix + "year";
+        this.chartId = this.prefix + "chart";
+        this.historyId = this.prefix + "history";
         this.typeId = this.prefix + "type";
         this.agegroupId = this.prefix + "agegroup";
         this.sexId = this.prefix + "sex";
@@ -54,10 +67,6 @@ export class Controller {
         for (var i = length - 1; i >= 0; i--) {
             select.options.remove(i);
         }
-    }
-
-    private getYearHTMLElement(): HTMLSelectElement {
-        return document.getElementById(this.yearId) as HTMLSelectElement;
     }
 
     private getTypeHTMLElement(): HTMLSelectElement {
@@ -77,8 +86,7 @@ export class Controller {
     }
 
     private getYear(): Year {
-        var index = this.getYearHTMLElement().selectedIndex;
-        return this.data[index];
+        return this.data[0];
     }
 
     private getType(): Types {
@@ -115,30 +123,6 @@ export class Controller {
         this.resetForm();
     }
 
-    private updateYears() {
-        var years = document.getElementById(this.yearId) as HTMLSelectElement;
-
-        this.removeOptions(years);
-
-        var items = this.data.map(function (year) { return year.getYear(); });
-
-        items.forEach(function (value) {
-            var element = document.createElement("option");
-            element.innerText = "" + value;
-            years.appendChild(element);
-        });
-    }
-
-    private getSexTranslation(sex: Sexes): string {
-        switch (sex) {
-            case Sexes.female: return "weiblich";
-            case Sexes.male: return "m&auml;nnlich";
-            case Sexes.mixed: return "gemischt";
-            default:
-                return "-";
-        }
-    }
-
     private getTimeId(index: number) {
         return this.prefix + "time_" + index;
     }
@@ -164,7 +148,7 @@ export class Controller {
             var time = this.calculator.getInputTime(x);
             var timeString = time > 0.5 ? "" + time : "";
             var formattedTimeString = this.calculator.getFormattedTime(x);
-            var points = this.calculator.getPoints(x);
+            var points = this.calculator.getFormattedPoints(x);
 
             var timeInputElement = document.getElementById(timeId) as HTMLInputElement;
             if (timeInputElement.value != timeString) {
@@ -178,26 +162,43 @@ export class Controller {
             pointsElement.innerHTML = points;
         };
 
-        var pointsSum = this.calculator.getPointsSum();
+        var pointsSum = this.calculator.getFormattedPointsSum();
         var pointsSumId = this.getPointsSumId();
         var pointsSumElement = document.getElementById(pointsSumId) as HTMLTableDataCellElement;
         pointsSumElement.innerHTML = pointsSum;
 
+        this.updateHistory();
+        this.updateHistoryTable();
     }
 
     private resetForm() {
         var form = this.getFormHTMLElement();
 
+        var agegroupname = this.getAgegroup().getName();
+
+        var dx = this.data.map(y => new YearAgegroup(y.getYear(), y.getAgegroups().filter(a => a.getType() == this.getType() && a.getName() == agegroupname)[0]));
+
         this.calculator.setAgegroup(this.getAgegroup(), this.getSex());
 
-        var html = `
-          <div style="background: #0077BB; color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width: 22em; float: left; clear: both;">Disziplin</div>
-          <div style="content: ''; float: left; background: #0077BB; text-color: #FFFFFF;">
-            <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7em; float: left;">Eingabe</div>
-            <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7em; float: left;">Zeit</div>
-            <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7em; float: left;">Punkte</div>
-          </div>
-          `;
+        var count = 0;
+        this.data.forEach(year => {
+            var entry = dx.filter(d => d.year == year.getYear())[0];
+            if (entry != undefined && entry.agegroup != undefined) {
+                this.calculators[count].setAgegroup(entry.agegroup, this.getSex());
+            } else {
+                this.calculators[count].resetAgegroup();
+            }
+            count++;
+        });
+
+        var html = ``;
+        html += `<div style="background: #0077BB; color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width: 22.8em; float: left; clear: both;">Disziplin</div>`;
+        html += `<div style="content: ''; float: left; background: #0077BB; text-color: #FFFFFF;">`;
+        html += `  <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7.6em; float: left;">Eingabe</div>`;
+        html += `  <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7.6em; float: left;">Zeit</div>`;
+        html += `  <div style="color: #FFFFFF; text-align: center; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7.6em; float: left;">Punkte</div>`;
+        html += `</div>`;
+
         for (var x = 0; x < this.calculator.getDisciplineCount(); x++) {
             var name = this.calculator.getDisciplineName(x);
             var record = this.calculator.getRecord(x);
@@ -209,11 +210,11 @@ export class Controller {
 
             var color = x % 2 == 0 ? "#FFFFFF" : "#f8f8ff";
 
-            html += `<div style="                   padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width: 22em; float: left; clear: both; background: ` + color + `;">` + description + `</div>`;
+            html += `<div style="                   padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width: 22.8em; float: left; clear: both; background: ` + color + `;">` + description + `</div>`;
             html += `<div style="content: ''; float: left; background: ` + color + `;">`;
-            html += `  <div style="                   padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width:  7em; float: left;"><input onkeyup="getController().timeChanged('` + x + `')" style="text-align: right; line-height: 1; height: auto; padding: 0.2em; width: 100%;" name="` + timeId + `" id="` + timeId + `" type="text" size="6" maxlength="6" value=""/></div>`;
-            html += `  <div style="text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7em; float: left;" id="` + formattedTimeId + `"></div>`;
-            html += `  <div style="text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7em; float: left;" id="` + pointsId + `"></div>`;
+            html += `  <div style="                   padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width:  7.6em; float: left;"><input onkeyup="getController().timeChanged('` + x + `')" style="text-align: right; line-height: 1; height: auto; padding: 0.2em; width: 100%;" name="` + timeId + `" id="` + timeId + `" type="text" size="6" maxlength="6" value=""/></div>`;
+            html += `  <div style="text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7.6em; float: left;" id="` + formattedTimeId + `"></div>`;
+            html += `  <div style="text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; border-top: 0px; width:  7.6em; float: left;" id="` + pointsId + `"></div>`;
             html += `</div>`;
         }
 
@@ -221,20 +222,55 @@ export class Controller {
 
         var pointsSumId = this.getPointsSumId();
 
-        html += `<div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width: 22.0em; float: left; clear: both; background: ` + sumcolor + `;">&nbsp;</div>
-                 <div style="content: ''; background: ` + sumcolor + `;">
-                   <div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width: 14em; float: left; background: ` + sumcolor + `;">Gesamtpunkte:</div>
-                   <div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width:  7em; float: left; background: ` + sumcolor + `;" id="` + pointsSumId + `"></div>
-                 </div>`;
+        html += `<div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width: 22.8em; float: left; clear: both; background: ` + sumcolor + `;">&nbsp;</div>`;
+        html += `<div style="content: ''; background: ` + sumcolor + `;">`;
+        html += `  <div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width: 15.2em; float: left; background: ` + sumcolor + `;">Gesamtpunkte:</div>`;
+        html += `  <div style="border-top: 1px solid #e7eaed; text-align: right; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; width:  7.6em; float: left; background: ` + sumcolor + `;" id="` + pointsSumId + `"></div>`;
+        html += `</div>`;
 
         form.innerHTML = html;
 
         this.updateForm();
     }
 
-    public yearChanged(): void {
-        this.updateAgegroups();
+    private updateHistory(): void {
+        var history = new TimesHistory(this.calculator);
+
+        var count = 0;
+        this.calculators.forEach(c => {
+            history.add(this.data[count].getYear(), c);
+            count++;
+        });
+
+        var ctx = (document.getElementById(this.chartId) as HTMLCanvasElement);
+        ctx.innerHTML = "";
+        var chartdata = history.getChartData();
+        if (this.chart == undefined) {
+            this.chart = new Chart(ctx, chartdata);
+        } else {
+            this.chart.data = chartdata.data;
+        }
+        this.chart.update(0);
     }
+
+    private updateHistoryTable(): void {
+        var history = new TimesHistory(this.calculator);
+
+        var count = 0;
+        this.calculators.forEach(c => {
+            history.add(this.data[count].getYear(), c);
+            count++;
+        });
+
+        var html = history.getHistoryTable();
+
+        var element = document.getElementById(this.historyId);
+        if (element != null) {
+            element.innerHTML = html;
+        }
+    }
+
+    private chart: Chart | undefined;
 
     public typeChanged(): void {
         this.updateAgegroups();
@@ -261,26 +297,35 @@ export class Controller {
 
         this.calculator.setInputTime(index, rawTime);
 
+        var disciplineName = this.calculator.getDisciplineName(index);
+
+        this.calculators.forEach(c => {
+            for (var x = 0; x < c.getDisciplineCount(); x++) {
+                if (c.getDisciplineName(x) == disciplineName) {
+                    c.setInputTime(x, rawTime);
+                }
+            }
+        });
+
         this.updateForm();
     }
 
     public initialize() {
         var html = '';
-        html += `
-        <div style="width: auto; padding: 0px; content: ''; display: table; clear: both;" id="` + this.settingsId + `">
-          <label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22em; float: left; clear: both;" for="`+ this.typeId + `"    >Jahr:</label><select onchange="getController().yearChanged()"             name="` + this.yearId + `"     id="` + this.yearId + `"     style="margin-top: 0.2em; margin-right: 0.2em; width: 21em; float: left;"></select>
-          <label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22em; float: left; clear: both;" for="`+ this.typeId + `"    >Typ:</label><select onchange="getController().typeChanged()"              name="` + this.typeId + `"     id="` + this.typeId + `"     style="margin-top: 0.2em; margin-right: 0.2em; width: 21em; float: left;"><option>Einzel</option><option>Mannschaft</option></select>
-          <label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22em; float: left; clear: both;" for="`+ this.agegroupId + `">Altersklasse:</label><select onchange="getController().agegroupChanged()" name="` + this.agegroupId + `" id="` + this.agegroupId + `" style="margin-top: 0.2em; margin-right: 0.2em; width: 21em; float: left;"></select>
-          <label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22em; float: left; clear: both;" for="`+ this.sexId + `"     >Geschlecht:</label><select onchange="getController().sexChanged()"        name="` + this.sexId + `"      id="` + this.sexId + `"      style="margin-top: 0.2em; margin-right: 0.2em; width: 21em; float: left;"><option>weiblich</option><option>m&auml;nnlich</option></select>
-        </div>`;
+        html += `<div style="width: auto; padding: 0px; content: ''; display: table; clear: both;" id="` + this.settingsId + `">`;
+        html += `<label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22.8em; float: left; clear: both;" for="`+ this.typeId + `"    >Typ:</label><select onchange="getController().typeChanged()"              name="` + this.typeId + `"     id="` + this.typeId + `"     style="margin-top: 0.2em; margin-right: 0.2em; width: 22.8em; float: left;"><option>Einzel</option><option>Mannschaft</option></select>`;
+        html += `<label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22.8em; float: left; clear: both;" for="`+ this.agegroupId + `">Altersklasse:</label><select onchange="getController().agegroupChanged()" name="` + this.agegroupId + `" id="` + this.agegroupId + `" style="margin-top: 0.2em; margin-right: 0.2em; width: 22.8em; float: left;"></select>`;
+        html += `<label style="padding-right: 0.5em; padding-top: 0.10em; padding-bottom: 0.10em; border-top: 0px; width: 22.8em; float: left; clear: both;" for="`+ this.sexId + `"     >Geschlecht:</label><select onchange="getController().sexChanged()"        name="` + this.sexId + `"      id="` + this.sexId + `"      style="margin-top: 0.2em; margin-right: 0.2em; width: 22.8em; float: left;"><option>weiblich</option><option>m&auml;nnlich</option></select>`;
+        html += `</div>`;
         html += `<br/>`;
         html += `<div style="border: 1px solid #0077BB; width: auto; padding: 0px; content: ''; display: table; clear: both;" id="` + this.formId + `"></div>`;
+        html += `<div style="border: 1px solid #0077BB; width: auto; padding: 0px; margin-top: 2em; width: min(100%, 50em);"><canvas id="` + this.chartId + `"></canvas></div>`;
+        html += `<div style="border: 1px solid #0077BB; width: auto; padding: 0px; margin-top: 2em; width: min(100%, 50em);" id="` + this.historyId + `"></div>`;
 
         if (this.parent != null) {
             this.parent.innerHTML = html;
         }
 
-        this.updateYears();
         this.updateAgegroups();
         this.resetForm();
     }

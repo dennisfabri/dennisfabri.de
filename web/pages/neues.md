@@ -1,10 +1,12 @@
 ---
+layout: page
 title: Neues
 permalink: /neues.html
 redirect_from:
   - /index.html
   - /rettungssport.html
   - /index.php
+search: false
 ---
 
 <!-- markdownlint-disable -->

@@ -9,7 +9,7 @@ class CalculatorDiscipline {
     private readonly record: number;
     private time: number;
 
-    constructor(discipline: Discipline, sex: Sexes) {
+    constructor(discipline : Discipline, sex: Sexes) {
         this.name = discipline.getName();
         this.record = discipline.getRecord(sex);
         this.time = 0;
@@ -93,9 +93,14 @@ class CalculatorAgegroup {
 }
 
 export class Calculator {
+
     private agegroup: CalculatorAgegroup;
 
     constructor() {
+        this.agegroup = new CalculatorAgegroup(new Agegroup(Types.individual, "", 0, []), Sexes.female);
+    }
+
+    public resetAgegroup() {
         this.agegroup = new CalculatorAgegroup(new Agegroup(Types.individual, "", 0, []), Sexes.female);
     }
 
@@ -147,12 +152,20 @@ export class Calculator {
         return this.formatTime(this.getDiscipline(index)?.getRecord() ?? 0);
     }
 
-    public getPoints(index: number): string {
+    public getFormattedPoints(index: number): string {
         return this.formatPoints(this.getDiscipline(index)?.getPoints() ?? 0);
     }
 
-    public getPointsSum(): string {
+    public getPoints(index: number): number {
+        return this.getDiscipline(index)?.getPoints() ?? 0;
+    }
+
+    public getFormattedPointsSum(): string {
         return new Intl.NumberFormat(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(this.agegroup.getPointsSum());
+    }
+
+    public getPointsSum(): number {
+        return this.agegroup.getPointsSum();
     }
 
     private setTime(index: number, time: number) {

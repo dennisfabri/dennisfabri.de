@@ -1,6 +1,8 @@
 @echo off
 rmdir /S /Q build\
-cd web
+cd punkterechner
+perl build.pl
+cd ..\web
 call build-production.cmd
 cd ..
 robocopy /MIR ergebnisse build\ergebnisse

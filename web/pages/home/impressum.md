@@ -1,8 +1,10 @@
 ---
+layout: page
 title: Impressum
 permalink: /home/impressum.html
 tags:
 description: Impressum
+search: false
 ---
 
 # Impressum
@@ -21,7 +23,7 @@ Kontakt:
 *Hinweis: Anfragen zu den bereitgestellten Programmen und Informationen
 werden ausschließlich per E-Mail entgegengenommen.*
 
-## Haftung für Inhalte
+## 1 Haftung für Inhalte
 
 Die verwendeten Fotos, Zeichnungen und Grafiken des Internet-Dienstes unterliegen
 dem Copyright von Dennis Fabri oder der jeweiligen Besitzer. Trotz aller Bemühungen
@@ -40,7 +42,7 @@ ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
 möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
 Inhalte umgehend entfernen.
 
-## Haftung für Links
+## 2 Haftung für Links
 
 Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir
 keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine
@@ -53,7 +55,7 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
 konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
 von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
-## Urheberrecht
+## 3 Urheberrecht
 
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
 unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
@@ -68,4 +70,4 @@ gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam
 werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
 Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 
-Quelle: [erecht24.de](https://www.e-recht24.de/)
+Quelle: [eRecht24](https://www.e-recht24.de/)

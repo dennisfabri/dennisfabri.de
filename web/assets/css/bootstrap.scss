@@ -1,9 +1,14 @@
+---
+layout: null
+excluded_in_search: true
+---
+
 $body-color: #222;
 $code-color: #666;
 $pre-color: $code-color;
 
 $theme-colors: (
-  "primary": $site-color,
+  "primary": {{ site.color }},
   "blue": #72A1E5,
   "orange": #fd7e14,
   "gray": #6c757d,
@@ -18,3 +23,5 @@ $theme-colors: (
   );
 
 //@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "node_modules/bootstrap/scss/bootstrap";

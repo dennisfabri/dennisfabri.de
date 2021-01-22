@@ -100,10 +100,18 @@ exclude:
   - package-lock.json
 
 include:
-  - node_modules/jquery/dist/jquery.slim.min.js
+  - .htaccess
+  - node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+  - node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
+  - node_modules/jquery/dist/jquery.min.js
+  - node_modules/jquery/dist/jquery.min.js.map
+  - node_modules/lunr/lunr.min.js
+  - node_modules/lunr-languages/lunr.stemmer.support.js
+  - node_modules/lunr-languages/lunr.de.js
   - node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
   - node_modules/@fortawesome/fontawesome-free/css/solid.min.css
   - node_modules/@fortawesome/fontawesome-free/css/brands.min.css
+  - node_modules/@fortawesome/fontawesome-free/css/regular.min.css
   - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot
   - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg
   - node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf
@@ -134,15 +142,13 @@ defaults:
     values:
       layout: page
       image: "assets/img/logo.svg"
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
       image: "assets/img/logo.svg"
-  -
-    scope:
+  - scope:
       path: "posts"
       type: "posts"
     values:

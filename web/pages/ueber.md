@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Über
 permalink: /ueber.html
 redirect_from:

@@ -28,19 +28,17 @@
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-icon-192x192.png" sizes="192x192"/>
 
 {% seo %}
-
+{% if page.date == nil %}
+  <meta property="og:type" content="website" />
+{% endif %}
 
 <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"/>
+<link rel="stylesheet" href="{{ site.baseurl }}/node_modules/@fortawesome/fontawesome-free/css/regular.min.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/@fortawesome/fontawesome-free/css/solid.min.css"/>
 <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/@fortawesome/fontawesome-free/css/brands.min.css"/>
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css"/>
-<!--
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/palette.css"/>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css"/>
--->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css"/>
 
-<script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>
 </head>

@@ -265,7 +265,7 @@ footer {
 .td-search-input {
     background: transparent;
     border-radius: 1rem;
-    font-family: "font awesome 5 free", open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol
+    font-family: "Font Awesome 5 Free", "open sans", -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, "helvetica neue", Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol"
 }
 
 .td-search-input.form-control:focus {
@@ -453,7 +453,7 @@ footer {
 }
 
 .td-toc #TableOfContents a {
-    color: #888
+    color: #6c757d;
 }
 
 .td-toc #TableOfContents a:hover {
@@ -614,13 +614,31 @@ html body .md-typeset .headerlink {
     height: 30px
 }
 
+#td-sidebar-menu .btn-link {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#td-sidebar-menu .btn-link:hover {
+    color: #1e53a0;
+}
+
 .td-navbar .nav-link {
     text-transform: none;
     font-weight: 700;
 }
 
 .td-navbar .td-search-input {
+    color: #bfddee;
     border: none
+}
+
+.td-search-input::placeholder {
+    font-weight: 900;
+}
+
+.td-navbar .td-search-input:focus {
+    color: #6c757d;
 }
 
 .td-navbar .td-search-input::-webkit-input-placeholder {
@@ -639,3 +657,16 @@ html body .md-typeset .headerlink {
     color: rgba(255, 255, 255, .75)
 }
 
+code {
+    color: #6c757d;
+}
+
+pre {
+    color: #6c757d;
+}
+
+.ico-ext {
+    padding-left: 0.3em;
+    font-size: 66%;
+    vertical-align:top;
+}

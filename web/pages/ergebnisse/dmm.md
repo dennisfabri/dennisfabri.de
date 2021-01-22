@@ -97,7 +97,6 @@ Mehrkampf-Meisterschaften) umbenannt.
   <sup>1)</sup> Vor 2007 wurde auf Deutschen Meisterschaften keine Ortsgruppenwertung durchgeführt.  
   <sup>2)</sup> Diese Wettkämpfe wurden wegen des Ausbruchs von SARS-CoV-2 (Corona) abgesagt.  
 
-Die Daten stammen zum Teil von der Internetseite [dm.dlrg-jugend.de](https://dm.dlrg-jugend.de/) und den von dort
-verlinkten Seiten (*.dlrg-jugend.de) (31.05.2011).
+Die Daten stammen zum Teil von der Internetseite [dlrg-jugend.de](https://dlrg-jugend.de/). Der ursprüngliche Link '```https://dm.dlrg-jugend.de/```' wurde am 31.05.2011 geprüft und ist nicht mehr verfügbar.
 
 [Fehler melden](mailto:info@dennisfabri.de)

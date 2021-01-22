@@ -12,6 +12,8 @@ unless(-e $builddirectory or mkdir $builddirectory) {
 
 print "Copying resources\n";
 copy("src/html/punkterechner.html","build/index.html") or die "Copy failed: $!";
+copy("node_modules/chart.js/dist/Chart.bundle.min.js","build") or die "Copy failed: $!";
+copy("node_modules/chart.js/dist/Chart.bundle.js","build") or die "Copy failed: $!";
 
 print "Generating sources\n";
 system("php src/php/data.php");
@@ -22,15 +24,15 @@ system("tsc");
 print "Bundling\n";
 
 my $directory = "./build/js/";
-my @filenames = ("Types", "Sexes", "Record", "Discipline", "Agegroup", "Year", "Calculator", "Controller", "Data", "Rechner");
+my @filenames = ("Types", "Sexes", "Record", "Discipline", "Agegroup", "Year", "Calculator", "TimesHistory", "Controller", "RecordsHistory", "Rechner");
 
-my $outputfilename = "./build/bundle.js";
+my $outputfilename = "./build/calculator.bundle.js";
 
 open(my $output, '>', $outputfilename) or die("Could not open $outputfilename: $!");
 
 for (my $x = 0; $x < @filenames; $x++) {
     my $filename = $directory . $filenames[$x] . ".js";
-    print "  $filename\n";
+    # print "  $filename\n";
 
     open(my $file, $filename) or die("Could not open $filename: $!");
     while( my $line = <$file>)  {
@@ -46,32 +48,12 @@ for (my $x = 0; $x < @filenames; $x++) {
 
 close($output);
 
-$outputfilename = "./build/punkterechner.md";
+copy("./src/md/punkterechner.md","./build/punkterechner.md") or die "Copy failed: $!";
 
-open($output, '>', $outputfilename) or die("Could not open $outputfilename: $!");
+print "Updating jekyll pages\n";
 
-{
-    my $filename = "src/content.md";
-    open(my $file, $filename) or die("Could not open $filename: $!");
-    while( my $line = <$file>)  {
-        print $output $line;
-    }
-    close($file);
-}
-
-print $output "\n";
-print $output "<script>\n";
-
-{
-    my $filename = "build/bundle.js";
-    open(my $file, $filename) or die("Could not open $filename: $!");
-    while( my $line = <$file>)  {
-        print $output $line;
-    }
-    close($file);
-}
-
-print $output "</script>\n";
-
+copy("./build/punkterechner.md","../web/pages/rettungssport/punkterechner.md") or die "Copy failed: $!";
+copy("./build/Chart.bundle.min.js","../web/assets/js/Chart.bundle.min.js") or die "Copy failed: $!";
+copy("./build/calculator.bundle.js","../web/assets/js/calculator.bundle.js") or die "Copy failed: $!";
 
 print "Finished\n";

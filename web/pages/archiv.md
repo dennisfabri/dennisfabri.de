@@ -2,6 +2,7 @@
 layout: page
 title: Archiv
 permalink: /archiv.html
+search: false
 ---
 
 # Archiv

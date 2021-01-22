@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Punkterechner-App Datenschutzerklärung
-date: 2021-01-01 00:00
 category: Rettungssport
 author: Dennis Fabri
 summary: 
 permalink: /rettungssport/punkterechner-app-datenschutzerklaerung.html
+search: false
 redirect_from:
   - /rettungssport/punkterechner-app/8-homepage/47-rettungssport-punkte-datenschutzerklaerung.html
 ---

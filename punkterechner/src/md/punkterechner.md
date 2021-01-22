@@ -19,3 +19,6 @@ Durchgang die Punkte für alle sechs Disziplinen ermitteln kann.
 <!-- markdownlint-disable MD013  MD033 MD037-->
 
 <div id="Calculator" />
+
+<script src="/web/assets/js/Chart.bundle.min.js"></script>
+<script src="/web/assets/js/calculator.bundle.js"></script>
