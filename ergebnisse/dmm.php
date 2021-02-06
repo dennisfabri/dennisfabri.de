@@ -1,10 +1,13 @@
 <?php
 if (php_sapi_name() == 'cli-server') {
 	header('Access-Control-Allow-Origin: http://localhost:4000');
+} else {
+	header('Access-Control-Allow-Origin: https://www.dennisfabri.de');
 }
   
 function get()
 {	
+		$prefix = "dmm";
 		$response = "{ \"data\": [";
 
         $values = array(
@@ -77,19 +80,19 @@ function get()
 	      }
 	
 	      $name = "DMM_" . $year . "_Ergebnis_Einzel.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $einzel = $name;
 	      }
 	      $name = "DMM_" . $year . "_Ergebnis_Mannschaft.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $mannschaft = $name;
 		  }
 	      $name = "DMM_" . $year . "_Gesamtwertung_LV.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $lv = $name;
 	      }
 	      $name = "DMM_" . $year . "_Gesamtwertung_OG.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $og = $name;
 	      }
 		  

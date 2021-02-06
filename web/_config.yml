@@ -22,8 +22,8 @@ description: > # this means to ignore newlines until "baseurl:"
   JAuswertung ist ein Auswertungsporgramm für Wettkämpfe nach aktuellem DLRG-Regelwerk.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/web" # the subpath of your site, e.g. /blog
-startpage: "/neues.html"
+baseurl: "" # the subpath of your site, e.g. /blog
+startpage: "/"
 
 # This is mostly for testing
 url: "https://www.dennisfabri.de" # the base hostname & protocol for your site
@@ -61,6 +61,9 @@ privacy: home/datenschutz.html
 
 # Link to a privacy policy in footer, uncomment and define if wanted
 impress: home/impressum.html
+
+# Link to the search page in footer, uncomment and define if wanted
+search: suche.html
 
 # google-analytics: UA-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
@@ -159,3 +162,4 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-external-links

@@ -12,3 +12,5 @@ minify -v -r -o build/ --match=\.html --js-keep-var-names --html-keep-document-t
 minify -v -r -o build/ --match=\.js --js-keep-var-names --html-keep-document-tags --html-keep-end-tags build/
 minify -v -r -o build/ --match=\.css build/
 minify -v -r -o build/ --match=\.svg build/
+
+robocopy private build\www

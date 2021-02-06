@@ -27,76 +27,15 @@ Mehrkampf-Meisterschaften) umbenannt.
 <!-- markdownlint-disable MD033 -->
 
   <div id="display"></div>
+  <script src="{{ site.baseurl }}/assets/js/listdmm.js"></script>
   <script>
-    const baseurl = "{{site.phpurl}}/ergebnisse/dmm/";
-    const listCompetitions = async () => {
-      const response = await fetch(baseurl, {
-        method: 'GET'
-      });
-
-      const data = await response.json(); //extract JSON from the http response
-
-      var rows = "";
-      var number = data.data.length;
-
-      for (d in data.data) {
-        var competition = data.data[d];
-        var year = competition.year;
-        var location = competition.location;
-        var individual = "-";
-        var team = "-";
-        var og = "-";
-        var lv = "-";
-
-        if (competition.url != "" && (('' + competition.url) != 'undefined')) {
-          location = "<a href=\"" + competition.url + "\">" + competition.location + "</a>";
-        }
-        if (competition.individual != "" && (('' + competition.individual) != 'undefined')) {
-          individual = "<a href=\"" + baseurl + competition.individual + "\">Einzel</a>";
-        }
-        if (competition.team != "" && (('' + competition.team) != 'undefined')) {
-          team = "<a href=\"" + baseurl + competition.team + "\">Mannschaft</a>";
-        }
-        if (competition.lv != "" && (('' + competition.lv) != 'undefined')) {
-          lv = "<a href=\"" + baseurl + competition.lv + "\">LV-Wertung</a>";
-        }
-        if (competition.og != "" && (('' + competition.og) != 'undefined')) {
-          og = "<a href=\"" + baseurl + competition.og + "\">OG-Wertung</a>";
-        } else if (year <= 2006) {
-          og = "- <sup>1</sup>";
-        }
-
-        rows += "<tr>";
-        rows += "<td style=\"border-left: 1px solid #0077BB; text-align: center; padding-right: 0.2em;\">" + year + "</td>";
-        rows += "<td>" + location + "</td><td style=\"text-align: center; padding-right: 0.2em;\">" + individual + "</td>";
-        rows += "<td style=\"text-align: center; padding-right: 0.2em;\">" + team + "</td>";
-        rows += "<td style=\"text-align: center; padding-right: 0.2em;\">" + og + "</td>";
-        rows += "<td style=\"text-align: center; padding-right: 0.2em;\">" + lv + "</td>";
-        rows += "<td style=\"border-right: 1px solid #0077BB; text-align: right; padding-right: 0.2em;\">" + number + "</td>";
-        rows += "</tr>";
-
-        number--;
-      };
-
-      var table = '<table style="border: 1px solid #0077BB; width: min(99%, 75em) ; border-collapse: collapse;">';
-      table += '<tr style="background-color: #0077BB; color: WHITE; border: 1px solid #0077bb;">';
-      table += '<th style="border-left: 1px solid #0077BB; text-align: center;">Jahr</th>';
-      table += '<th style="text-align: center;">Ort</th>';
-      table += '<th colspan="4" style="text-align: center;">Ergebnisse</th>';
-      table += '<th style="border-right: 1px solid #0077BB; text-align: center;">Nr</th>';
-      table += '</tr>';
-      table += rows;
-      table += '</table>';
-
-      document.getElementById("display").innerHTML = table;
-    }
-
     listCompetitions();
   </script>
 
   <sup>1)</sup> Vor 2007 wurde auf Deutschen Meisterschaften keine Ortsgruppenwertung durchgeführt.  
   <sup>2)</sup> Diese Wettkämpfe wurden wegen des Ausbruchs von SARS-CoV-2 (Corona) abgesagt.  
 
-Die Daten stammen zum Teil von der Internetseite [dlrg-jugend.de](https://dlrg-jugend.de/). Der ursprüngliche Link '```https://dm.dlrg-jugend.de/```' wurde am 31.05.2011 geprüft und ist nicht mehr verfügbar.
+Die Daten stammen zum Teil von der Internetseite [dlrg-jugend.de](https://dlrg-jugend.de/). Der ursprüngliche Link
+'```https://dm.dlrg-jugend.de/```' wurde am 31.05.2011 geprüft und ist nicht mehr verfügbar.
 
 [Fehler melden](mailto:info@dennisfabri.de)

@@ -1,12 +1,15 @@
 <?php
 if (php_sapi_name() == 'cli-server') {
 	header('Access-Control-Allow-Origin: http://localhost:4000');
+} else {
+	header('Access-Control-Allow-Origin: https://www.dennisfabri.de');
 }
 
 class RestDEM
 {
 	public static function get()
 	{	
+		$prefix = "dem";
 		$response = "{\"data\": [";
 
         $values = array(
@@ -31,11 +34,11 @@ class RestDEM
 	      }
 	
 	      $name = "DEM_" . $year . "_Ergebnis_Einzel.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $einzel = $name;
 	      }
 	      $name = "DEM_" . $year . "_Ergebnis_Mannschaft.pdf";
-	      if (file_exists($name)) {
+	      if (file_exists("$prefix/$name")) {
 		    $mannschaft = $name;
 	      }
 		  

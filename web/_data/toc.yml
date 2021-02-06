@@ -1,7 +1,7 @@
 - title: "Über"
   url: "ueber.html"
 - title: "Neues"
-  url: "neues.html"
+  url: ""
   links:
     - title: "Archiv"
       url: "archiv.html"
@@ -20,7 +20,7 @@
       url: "jauswertung/alphaserver.html"
 - title: "Rettungssport"
   links:
-    - title: "Punkterechner-App"
+    - title: "Punkterechner App"
       url: "rettungssport/punkterechner-app.html"
     - title: "Punkterechner"
       url: "rettungssport/punkterechner.html"

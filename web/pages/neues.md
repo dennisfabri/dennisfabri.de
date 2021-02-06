@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Neues
-permalink: /neues.html
+permalink: /
 redirect_from:
-  - /index.html
+  - /neues.html
   - /rettungssport.html
   - /index.php
 search: false

@@ -1,1 +1,47 @@
-ErrorDocument 404 /web/errorpages/404.html
+Options +FollowSymLinks -MultiViews
+
+ErrorDocument 404 /errorpages/404.html
+
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+#RewriteRule ^$ /web/neues.html [L,NC,R=307]
+#RewriteRule ^/$ /web/neues.html [L,NC,R=307]
+
+RewriteRule ^web3/xing.com/profile/Dennis_Fabri https://www.xing.com/profile/Dennis_Fabri [L,NC,R=301]
+RewriteRule ^web/xing.com/profile/Dennis_Fabri https://www.xing.com/profile/Dennis_Fabri [L,NC,R=301]
+RewriteRule ^xing.com/profile/Dennis_Fabri https://www.xing.com/profile/Dennis_Fabri [L,NC,R=301]
+
+RewriteRule ^web/(.*)$ $1 [L,NC,R=301]
+RewriteRule ^web2/(.*)$ $1 [L,NC,R=301]
+RewriteRule ^web3/(.*)$ $1 [L,NC,R=301]
+
+RewriteRule ^ergebnisse/dem/(.*)$ https://dlrg.dennisfabri.de/ergebnisse/dem/$1 [L,NC,R=301]
+RewriteRule ^ergebnisse/dmm/(.*)$ https://dlrg.dennisfabri.de/ergebnisse/dmm/$1 [L,NC,R=301]
+RewriteRule ^ergebnisse/dsm/(.*)$ https://dlrg.dennisfabri.de/ergebnisse/dsm/$1 [L,NC,R=301]
+
+RewriteRule ^web$ / [L,NC,R=307]
+RewriteRule ^web/$ / [L,NC,R=307]
+
+RewriteRule ^sitemap.xml$ sitemap.xml [L,NC,R=301]
+RewriteRule ^rechner/(.*)$ rettungssport/punkterechner.html [R=301,L]
+RewriteRule ^dm$ ergebnisse/dmm.html [R=301,L]
+RewriteRule ^dsm$ ergebnisse/dsm.html [R=301,L]
+RewriteRule ^dm/(.*)$ ergebnisse/dmm.html [R=301,L]
+RewriteRule ^dsm/(.*)$ ergebnisse/dsm.html [R=301,L]
+
+RewriteRule ^rettungssport/dem.html$ ergebnisse/dem.html [R=301,L]
+RewriteRule ^rettungssport/dm.html$ ergebnisse/dmm.html [R=301,L]
+RewriteRule ^rettungssport/dsm.html$ ergebnisse/dsm.html [R=301,L]
+
+RewriteRule ^jauswertung/aktuelles.html$ jauswertung/entwicklungsstatus.html [R=301,L]
+RewriteRule ^jauswertung.html$ jauswertung/ [R=301,L]
+RewriteRule ^jauswertung/referenzen.html$ jauswertung/ [R=301,L]
+
+RewriteRule ^neues.html$ / [R=301,L]
+RewriteRule ^rettungssport.html$ / [R=301,L]
+RewriteRule ^index.php$ / [R=301,L]
+RewriteRule ^home.html$ ueber.html [R=301,L]
+
+RewriteRule ^rettungssport/punkterechner-app/8-homepage/47-rettungssport-punkte-datenschutzerklaerung.html$ rettungssport/punkterechner-app-datenschutzerklaerung.html [R=301,L]

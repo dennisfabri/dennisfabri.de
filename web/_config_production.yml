@@ -1,8 +1,6 @@
 
 url: "https://www.dennisfabri.de" # the base hostname & protocol for your site
-phpurl: "https://www.dennisfabri.de"
+phpurl: "https://dlrg.dennisfabri.de"
 
 sass:
     style: compressed
-
-baseurl: "/web"

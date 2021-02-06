@@ -211,7 +211,11 @@ a:hover {
 }
 
 footer {
-    min-height: 150px
+    min-height: 6em;
+}
+
+footer * p {
+    margin-bottom: 0em;
 }
 
 .navbar-dark .navbar-nav .nav-link {
