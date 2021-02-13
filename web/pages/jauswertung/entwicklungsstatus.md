@@ -22,8 +22,8 @@ Neues:
 
 Bug-Fixes:
 
-- 
+- Interne Fehlermeldungen beim Start korrigiert
 
 Sonstiges:
 
-- 
+- Restrukturierung des Quelltextes

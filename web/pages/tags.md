@@ -12,11 +12,11 @@ search: false
 <div class="post-list" style="margin-bottom:40px">
     {% for post in site.tags[tag] %}<div class="tag-entry">
     <a href="{{- site.url -}}{{site.baseurl}}{{- post.url -}}">{{- post.title -}}</a>
-    <time style="font-style:italic; float:right" datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%d.%m.%Y" -}}</time>
+    <time datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%d.%m.%Y" -}}</time>
 </div>{%- endfor -%}
 {% for doc in site.docs %}{% if doc.tags contains tag %}
 <div class="tag-entry">
     <a href="{{- site.baseurl -}}{{- doc.url -}}">{{ doc.title }}</a>
-        <time style="font-style:italic; float:right" datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%d.%m.%Y" -}}</time>
+        <time datetime="{{- doc.date | date_to_xmlschema -}}"> {{- doc.date | date: "%d.%m.%Y" -}}</time>
     </div>{% endif %}{% endfor %}
 </div>{% endif %}{%- endfor -%}
