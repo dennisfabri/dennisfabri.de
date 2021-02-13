@@ -13,7 +13,7 @@ permalink: /jauswertung/downloads.html
 Die jeweils aktuelle Version von JAuswertung kann auf [Github](https://github.com/dennisfabri/JAuswertung/) im Bereich
 [Releases](https://github.com/dennisfabri/JAuswertung/releases) heruntergeladen werden.
 
-<!-- markdownlint-disable MD033 -->1
+<!-- markdownlint-disable MD033 -->
 <script src="{{ site.baseurl }}/assets/js/githubreleaseinfo.js"></script>
 <script language="javascript" type="text/javascript">
 $(document).ready(function () {
