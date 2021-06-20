@@ -10,7 +10,6 @@ function GetLatestReleaseInfo() {
        var einzel = "";
        var mannschaft = "";
        release.assets.forEach(a => {
-           console.info(a.name);
            var entry = {
                url: a.browser_download_url,
                name: a.name,

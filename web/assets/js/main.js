@@ -1,7 +1,3 @@
----
-exclude_in_search: true
-layout: null
----
 (function($) {
     'use strict';
     $(function() {
@@ -27,7 +23,7 @@ layout: null
             $('.js-navbar-scroll').addClass('navbar-bg-onscroll');
         }
         $(window).on('scroll', function() {
-            var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();
+            // var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();
             var promoOffset = bottomPos($('.js-td-cover'));
             var navbarOffset = $('.js-navbar-scroll').offset().top;
             if ((promoOffset - navbarOffset) < threshold) {
