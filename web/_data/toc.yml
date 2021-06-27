@@ -10,6 +10,8 @@
 - title: "JAuswertung"
   url: "jauswertung/"
   links:
+    - title: "Anleitungen"
+      url: "jauswertung/anleitungen.html"
     - title: "Entwicklungsstatus"
       url: "jauswertung/entwicklungsstatus.html"
     - title: "Downloads"
