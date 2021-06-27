@@ -10,8 +10,6 @@
 - title: "JAuswertung"
   url: "jauswertung/"
   links:
-    - title: "Anleitungen"
-      url: "jauswertung/anleitungen.html"
     - title: "Entwicklungsstatus"
       url: "jauswertung/entwicklungsstatus.html"
     - title: "Downloads"
@@ -20,6 +18,19 @@
       url: "jauswertung/systemvoraussetzungen.html"
     - title: "AlphaServer"
       url: "jauswertung/alphaserver.html"
+- title: "Anleitungen"
+  url: "anleitungen.html"
+  links:
+    - title: "Startkartendruck"
+      url: "jauswertung/anleitungen/startkartendruck.html"
+    - title: "Checksummen"
+      url: "jauswertung/anleitungen/checksummen.html"
+    - title: "Mannschaftsmeldung für Ausrichter"
+      url: "jauswertung/anleitungen/mannschaftsmitglieder-ausrichter.html"
+    - title: "Mannschaftsmeldung für Teammanager"
+      url: "jauswertung/anleitungen/mannschaftsmitglieder-teammanager.html"
+    - title: "Qualifikation im Freigewässer"
+      url: "jauswertung/anleitungen/qualifikation-im-freiwasser.html"
 - title: "Rettungssport"
   links:
     - title: "Punkterechner App"
