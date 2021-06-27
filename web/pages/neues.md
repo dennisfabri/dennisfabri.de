@@ -13,7 +13,7 @@ search: false
 
 # Neues
 
-{% for post in site.posts limit:2 %}
+{% for post in site.posts limit:4 %}
    <div class="post-preview">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
    {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
