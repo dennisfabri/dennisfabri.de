@@ -59,6 +59,7 @@ function get()
 			array(2018, "Leipzig", ""),
 			array(2019, "Hagen", ""),
 			array(2020, "-<sup>2</sup>", ""),
+			array(2021, "Freiburg", ""),
 		);
 
         for ($x = count($values) - 1; $x >= 0; $x--) {

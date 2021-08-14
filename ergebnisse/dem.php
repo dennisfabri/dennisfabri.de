@@ -15,6 +15,7 @@ class RestDEM
         $values = array(
 			array(2019, "Magdeburg", ""),
 			array(2020, "-<sup>1</sup>", ""),
+			array(2021, "Berlin", ""),
 		);
 
         for ($x = count($values) - 1; $x >= 0; $x--) {

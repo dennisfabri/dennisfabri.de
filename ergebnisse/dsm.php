@@ -43,7 +43,8 @@ function get()
             array(2017, "Andernach", "http://dlrg-andernach.de/?site=dsm"),
             array(2018, "Harsewinkel", "https://harsewinkel.dlrg.de/dsm-2018.html"),
             array(2019, "Sulzbach", "https://sulzbach.dlrg.de/"),
-            array(2020, "-<sup>1</sup>", ""),
+            array(2020, "Wuppertal<sup>1</sup>", ""),
+            array(2021, "Magdeburg<sup>1</sup>", ""),
 		);
 
         for ($x = count($values) - 1; $x >= 0; $x--) {
