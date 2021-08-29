@@ -24,6 +24,7 @@ Neues:
 
 - Darstellung von Abmeldungen zu Finals verbessert.
 - Elektrische Zeitmessung bereinigt
+- Kleinere Anpassung in der Darstellung
 
 Bug-Fixes:
 
@@ -34,3 +35,4 @@ Bug-Fixes:
 Sonstiges:
 
 - Sicherheitsupdate von XStream
+- Tests erweitert
