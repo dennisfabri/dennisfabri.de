@@ -22,12 +22,15 @@ Neues:
 
 Überarbeitungen:
 
-- 
+- Darstellung von Abmeldungen zu Finals verbessert.
+- Elektrische Zeitmessung bereinigt
 
 Bug-Fixes:
 
-- 
+- Fehler bei Gesamtergebnissen mit Finals und Disqualifikation korrigiert.
+- FlatLaF wurde wegen einiger Probleme entfernt.
+- Fehler im Dateiformat in Version 16.0.0 korrigiert
 
 Sonstiges:
 
-- 
+- Sicherheitsupdate von XStream
