@@ -22,12 +22,18 @@ Neues:
 
 Überarbeitungen:
 
-- 
+- Popups für nicht vollständig angezeigte Tabellenzellen verbessert.
 
 Bug-Fixes:
 
-- 
+- Abmeldung von Finals korrigiert.
+- Drucken von leeren Startkarten korrigiert.
+- Fehlermeldung beim Löschen eines Teilnehmers/einer Mannschaft behoben.
+- Fenster werden nur noch auf verfügbaren Monitoren geöffnet.
+- Korrektur der Designanpassungen beim Programmstart
+- Sonderfall bei elektronischer Zeitmessung korrigiert.
 
 Sonstiges:
 
-- 
+- Aktualisierung auf Java 17
+- Kleinere Quelltextanpassungen
