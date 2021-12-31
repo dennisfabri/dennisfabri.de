@@ -7,7 +7,6 @@ build
 
 punkterechner/build
 punkterechner/node_modules
-punkterechner/src/ts/RecordsHistory.ts
 web/.jekyll-cache
 web/.jekyll-metadata
 web/node_modules

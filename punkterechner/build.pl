@@ -15,9 +15,6 @@ copy("src/html/punkterechner.html","build/index.html") or die "Copy failed: $!";
 copy("node_modules/chart.js/dist/Chart.bundle.min.js","build") or die "Copy failed: $!";
 copy("node_modules/chart.js/dist/Chart.bundle.js","build") or die "Copy failed: $!";
 
-print "Generating sources\n";
-system("php src/php/data.php");
-
 print "Compiling\n";
 system("tsc");
 
