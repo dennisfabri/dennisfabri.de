@@ -6683,7 +6683,7 @@ export var recordsHistory = [
         new Record(Sexes.male, 52.19),
       ]),
       new Discipline("50m Retten", [
-        new Record(Sexes.female, 34.05),
+        new Record(Sexes.female, 34.04),
         new Record(Sexes.male, 30.16),
       ]),
       new Discipline("100m Kombinierte Rettungsübung", [
@@ -6709,7 +6709,7 @@ export var recordsHistory = [
         new Record(Sexes.male, 49.38),
       ]),
       new Discipline("50m Retten", [
-        new Record(Sexes.female, 34.05),
+        new Record(Sexes.female, 34.04),
         new Record(Sexes.male, 27.27),
       ]),
       new Discipline("100m Kombinierte Rettungsübung", [
@@ -6740,7 +6740,7 @@ export var recordsHistory = [
       ]),
       new Discipline("100m Lifesaver", [
         new Record(Sexes.female, 62.87),
-        new Record(Sexes.male, 54.01),
+        new Record(Sexes.male, 50.02),
       ]),
     ]),
     new Agegroup(Types.individual, "AK 30", 3, [
@@ -6943,8 +6943,8 @@ export var recordsHistory = [
     ]),
     new Agegroup(Types.team, "AK 12", 4, [
       new Discipline("4*50m Hindernisstaffel", [
-        new Record(Sexes.female, 145.64),
-        new Record(Sexes.male, 141.02),
+        new Record(Sexes.female, 155.82),
+        new Record(Sexes.male, 155.81),
       ]),
       new Discipline("4*25m Rückenlage ohne Armtätigkeit", [
         new Record(Sexes.female, 82.19),
@@ -6973,8 +6973,8 @@ export var recordsHistory = [
         new Record(Sexes.male, 109.79),
       ]),
       new Discipline("4*50m Rettungsstaffel", [
-        new Record(Sexes.female, 147.16),
-        new Record(Sexes.male, 130.49),
+        new Record(Sexes.female, 159.63),
+        new Record(Sexes.male, 138.5),
       ]),
     ]),
     new Agegroup(Types.team, "AK 15/16", 4, [
@@ -6991,8 +6991,8 @@ export var recordsHistory = [
         new Record(Sexes.male, 100.72),
       ]),
       new Discipline("4*50m Rettungsstaffel", [
-        new Record(Sexes.female, 140.26),
-        new Record(Sexes.male, 118.81),
+        new Record(Sexes.female, 146.8),
+        new Record(Sexes.male, 121.44),
       ]),
     ]),
     new Agegroup(Types.team, "AK 17/18", 4, [
@@ -7009,7 +7009,7 @@ export var recordsHistory = [
         new Record(Sexes.male, 92.88),
       ]),
       new Discipline("4*50m Rettungsstaffel", [
-        new Record(Sexes.female, 131.42),
+        new Record(Sexes.female, 141.11),
         new Record(Sexes.male, 113.02),
       ]),
     ]),
@@ -7027,8 +7027,8 @@ export var recordsHistory = [
         new Record(Sexes.male, 86.19),
       ]),
       new Discipline("4*50m Rettungsstaffel", [
-        new Record(Sexes.female, 128.2),
-        new Record(Sexes.male, 106.78),
+        new Record(Sexes.female, 129.32),
+        new Record(Sexes.male, 112.92),
       ]),
     ]),
     new Agegroup(Types.team, "AK 100", 4, [
