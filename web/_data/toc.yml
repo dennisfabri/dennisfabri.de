@@ -14,6 +14,8 @@
       url: "jauswertung/entwicklungsstatus.html"
     - title: "Downloads"
       url: "jauswertung/downloads.html"
+    - title: "Installation"
+      url: "jauswertung/installation.html"
     - title: "Systemvoraussetzungen"
       url: "jauswertung/systemvoraussetzungen.html"
     - title: "AlphaServer"
