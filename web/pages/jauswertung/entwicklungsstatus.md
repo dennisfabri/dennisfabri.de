@@ -18,16 +18,18 @@ entfallen.
 
 Neues:
 
-- 
+- Upload von Ergebnissen auf die Gliederungshomepage (ISC)
+- Export von Zeiten im JSON-Format (WIP)
 
 Überarbeitungen:
 
-- 
+- Zeilen in Listen sind leicht größer geworden
 
 Bug-Fixes:
 
-- 
+- Problem bei der Disziplinenauswahl behoben
+- Export der Disziplinen in den Ergebnissen korrigiert
 
 Sonstiges:
 
-- 
+- Allgemeiner Code-Cleanup
