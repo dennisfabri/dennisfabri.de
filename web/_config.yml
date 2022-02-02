@@ -63,7 +63,7 @@ privacy: home/datenschutz.html
 impress: home/impressum.html
 
 # Link to the search page in footer, uncomment and define if wanted
-search: suche.html
+#search: suche.html
 
 # google-analytics: UA-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
@@ -88,6 +88,7 @@ fixedNav: 'true' # true or false
 #permalink: /:year/:title/
 permalink: /:year/:month-:day-:slug:output_ext
 markdown: kramdown
+
 exclude:
   - _site
   - CHANGELOG.md
