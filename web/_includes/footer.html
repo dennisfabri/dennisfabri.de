@@ -27,33 +27,14 @@
      </div>
      <div class="col-12 col-sm-4 text-right py-2 order-sm-2 justify-content-end">
 	        <a class="gh-source" data-gh-source="github" href="{{ site.repo }}" title="Go to repository" data-md-state="done">
-          <div class="gh-source__repository">
-            <div class="fab fa fa-github fa-2x" style="padding-right:20px; float:left; margin-top:5px"></div>
-            {{ site.github_user }}/{{ site.github_repo }}
-          <ul class="gh-source__facts"><li class="gh-source__fact" id='stars'></li><li id="forks" class="gh-source__fact"></li></ul></div></a>
+            <div class="gh-source__repository">
+              <div class="fab fa fa-github fa-2x" style="padding-right:20px; float:left; margin-top:5px"></div>
+              {{ site.github_user }}/{{ site.github_repo }}
+            </div>
+          </a>
         </div>
    </div>
 
     </div>
   </div>
 </footer>
-
-<script>
-  $(document).ready(function() {
-    var url = "https://api.github.com/search/repositories?q={{ site.github_user }}/{{ site.github_repo }}";
-    fetch(url, { 
-        headers: {"Accept":"application/vnd.github.preview"}
-    }).then(function(e) {
-      return e.json()
-    }).then(function(r) {
-       stars = 0;
-       forks = 0;
-       if (r.items.length > 0) {
-         stars = r.items[0]['stargazers_count']
-         forks = r.items[0]['forks_count']
-       }
-       $('#stars').text(stars + " Stars")
-       $('#forks').text(forks + " Forks")
-    });
-  });
-</script>
