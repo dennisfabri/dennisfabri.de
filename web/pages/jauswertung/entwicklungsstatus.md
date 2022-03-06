@@ -28,6 +28,7 @@ Bug-Fixes:
 - Problem bei der Disziplinenauswahl behoben
 - Export der Disziplinen in den Ergebnissen korrigiert
 - Urkundendateien konnten nicht geladen oder gespeichert werden
+- Dialogüberschrift "Gliederung bearbeiten" korrigiert
 
 Sonstiges:
 
