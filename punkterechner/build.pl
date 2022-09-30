@@ -16,7 +16,7 @@ copy("node_modules/chart.js/dist/Chart.bundle.min.js","build") or die "Copy fail
 copy("node_modules/chart.js/dist/Chart.bundle.js","build") or die "Copy failed: $!";
 
 print "Compiling\n";
-system("tsc");
+system("npx tsc");
 
 print "Bundling\n";
 

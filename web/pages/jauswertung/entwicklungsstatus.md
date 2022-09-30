@@ -14,22 +14,19 @@ Auf dieser Seite werden die Veränderungen der Entwicklerversion gegenüber der 
 
 Neues:
 
-- Manuell eingetragene Gender (z.B. mixed für Staffeln) werden bei Rekorden, Pflichzeiten und Meldungsimporten berücksichtigt.
+- 
 
 Überarbeitungen:
 
-- Abmeldung von Finals im Ergebnis einer Runde möglich
-- Anpassungen für den ISC-Ergebnis-Upload
+- 
 
 Bug-Fixes:
 
-- Beim Import von Meldungen wurden ggf. nicht alle Tabellenblätter erkannt.
-- Lauflisten für Finalläufe konnten nicht korrekt bearbeitet werden.
-- Problem beim Laden von Icons behoben.
+- 
 
 Sonstiges:
 
-- Abhängigkeiten und Tools aktualisiert.
+- 
 
 **Ankündigung:** Das Programm AlphaServer zur Anbindung von Omega-Zeitmessanlagen wird durch die neue Software AlphaTimer
 abgelöst. AlphaTimer wird dabei ein eigenständiges Programm, die Bündelung von AlphaServer mit JAuswertung wird in Zukunft

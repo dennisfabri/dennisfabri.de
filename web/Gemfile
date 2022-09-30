@@ -35,3 +35,5 @@ end
 #   bundle install
 # Run locally:
 #   bundle exec jekyll serve
+
+gem "webrick", "~> 1.7"
