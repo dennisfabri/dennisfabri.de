@@ -36,7 +36,7 @@ Minimalkonfiguration
   - 10GB MB freie Festplattenkapazität
   - FullHD-Auflösung von 1920x1080 Pixel (1080p)
   - Drucker
-  - Barcode- & QR-Code-Scanner
+  - QR-Code-Scanner
 - Software
   - zur Anzeige von HTML-Dateien
   - zur Bearbeitung von Excel- und CSV-Dateien
