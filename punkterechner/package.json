@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "chart.js": "^2.9.4"
+    "chart.js": "^2.9.4",
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   },
   "scripts": {
     "build": "perl build.pl",

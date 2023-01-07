@@ -7150,4 +7150,536 @@ export var recordsHistory = [
       ]),
     ]),
   ]),
+  new Year(2023, [
+    new Agegroup(Types.individual, "AK 12", 3, [
+      new Discipline("50m Hindernisschwimmen", [
+        new Record(Sexes.female, 31.03),
+        new Record(Sexes.male, 30.02),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 32.69),
+        new Record(Sexes.male, 34.15),
+      ]),
+      new Discipline("50m Flossenschwimmen", [
+        new Record(Sexes.female, 22.7),
+        new Record(Sexes.male, 21.32),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 13/14", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 64.56),
+        new Record(Sexes.male, 61.23),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 38.92),
+        new Record(Sexes.male, 35.9),
+      ]),
+      new Discipline("50m Retten mit Flossen", [
+        new Record(Sexes.female, 26.8),
+        new Record(Sexes.male, 23.23),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 15/16", 3, [
+      new Discipline("200m Hindernisschwimmen", [
+        new Record(Sexes.female, 131.97),
+        new Record(Sexes.male, 123.85),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 61.24),
+        new Record(Sexes.male, 56.44),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 35.25),
+        new Record(Sexes.male, 32.39),
+      ]),
+      new Discipline("100m Kombinierte Rettungsübung", [
+        new Record(Sexes.female, 73.61),
+        new Record(Sexes.male, 69.27),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 52.15),
+        new Record(Sexes.male, 49.35),
+      ]),
+      new Discipline("200m Super-Lifesaver", [
+        new Record(Sexes.female, 150.39),
+        new Record(Sexes.male, 146.8),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 17/18", 3, [
+      new Discipline("200m Hindernisschwimmen", [
+        new Record(Sexes.female, 130.04),
+        new Record(Sexes.male, 122.3),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 60.93),
+        new Record(Sexes.male, 52.19),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 34.04),
+        new Record(Sexes.male, 30.16),
+      ]),
+      new Discipline("100m Kombinierte Rettungsübung", [
+        new Record(Sexes.female, 70.56),
+        new Record(Sexes.male, 62.47),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 52.15),
+        new Record(Sexes.male, 45.96),
+      ]),
+      new Discipline("200m Super-Lifesaver", [
+        new Record(Sexes.female, 146.07),
+        new Record(Sexes.male, 133.42),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK Offen", 3, [
+      new Discipline("200m Hindernisschwimmen", [
+        new Record(Sexes.female, 125.5),
+        new Record(Sexes.male, 117.0),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 56.1),
+        new Record(Sexes.male, 49.38),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 32.81),
+        new Record(Sexes.male, 27.27),
+      ]),
+      new Discipline("100m Kombinierte Rettungsübung", [
+        new Record(Sexes.female, 67.04),
+        new Record(Sexes.male, 59.06),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 50.63),
+        new Record(Sexes.male, 44.04),
+      ]),
+      new Discipline("200m Super-Lifesaver", [
+        new Record(Sexes.female, 143.01),
+        new Record(Sexes.male, 125.66),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 25", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 63.72),
+        new Record(Sexes.male, 56.11),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 37.82),
+        new Record(Sexes.male, 32.03),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 58.72),
+        new Record(Sexes.male, 52.01),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 62.87),
+        new Record(Sexes.male, 50.02),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 30", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 64.92),
+        new Record(Sexes.male, 56.7),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 37.82),
+        new Record(Sexes.male, 32.03),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 64.41),
+        new Record(Sexes.male, 52.2),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 65.16),
+        new Record(Sexes.male, 50.02),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 35", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 67.0),
+        new Record(Sexes.male, 57.52),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 38.38),
+        new Record(Sexes.male, 32.25),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 64.73),
+        new Record(Sexes.male, 54.02),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 65.72),
+        new Record(Sexes.male, 57.52),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 40", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 69.15),
+        new Record(Sexes.male, 57.68),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 38.38),
+        new Record(Sexes.male, 32.25),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 64.73),
+        new Record(Sexes.male, 54.02),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 68.43),
+        new Record(Sexes.male, 59.28),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 45", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 70.45),
+        new Record(Sexes.male, 61.44),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 39.34),
+        new Record(Sexes.male, 34.13),
+      ]),
+      new Discipline("100m Retten mit Flossen", [
+        new Record(Sexes.female, 64.89),
+        new Record(Sexes.male, 54.02),
+      ]),
+      new Discipline("100m Lifesaver", [
+        new Record(Sexes.female, 68.43),
+        new Record(Sexes.male, 60.91),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 50", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 75.82),
+        new Record(Sexes.male, 61.5),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 45.1),
+        new Record(Sexes.male, 34.13),
+      ]),
+      new Discipline("50m Retten mit Flossen", [
+        new Record(Sexes.female, 31.99),
+        new Record(Sexes.male, 24.91),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 55", 3, [
+      new Discipline("100m Hindernisschwimmen", [
+        new Record(Sexes.female, 80.01),
+        new Record(Sexes.male, 63.94),
+      ]),
+      new Discipline("50m Retten", [
+        new Record(Sexes.female, 45.91),
+        new Record(Sexes.male, 36.42),
+      ]),
+      new Discipline("50m Retten mit Flossen", [
+        new Record(Sexes.female, 31.99),
+        new Record(Sexes.male, 25.52),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 60", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 35.06),
+        new Record(Sexes.male, 27.7),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 41.43),
+        new Record(Sexes.male, 30.88),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 28.8),
+        new Record(Sexes.male, 19.23),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 65", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 37.2),
+        new Record(Sexes.male, 31.1),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 44.14),
+        new Record(Sexes.male, 36.9),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 33.08),
+        new Record(Sexes.male, 22.61),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 70", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 38.6),
+        new Record(Sexes.male, 32.22),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 46.8),
+        new Record(Sexes.male, 40.48),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 31.44),
+        new Record(Sexes.male, 24.43),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 75", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 41.62),
+        new Record(Sexes.male, 35.07),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 50.17),
+        new Record(Sexes.male, 44.64),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 33.81),
+        new Record(Sexes.male, 24.66),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 80", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 43.83),
+        new Record(Sexes.male, 37.84),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 59.17),
+        new Record(Sexes.male, 45.23),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 37.61),
+        new Record(Sexes.male, 28.39),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 85", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 73.98),
+        new Record(Sexes.male, 63.08),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 72.61),
+        new Record(Sexes.male, 68.23),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 41.87),
+        new Record(Sexes.male, 37.67),
+      ]),
+    ]),
+    new Agegroup(Types.individual, "AK 90", 3, [
+      new Discipline("50m Freistilschwimmen", [
+        new Record(Sexes.female, 86.75),
+        new Record(Sexes.male, 99.18),
+      ]),
+      new Discipline("50m Kombiniertes Schwimmen", [
+        new Record(Sexes.female, 84.59),
+        new Record(Sexes.male, 101.34),
+      ]),
+      new Discipline("25m Schleppen einer Puppe", [
+        new Record(Sexes.female, 48.08),
+        new Record(Sexes.male, 49.33),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 12", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 149.75),
+        new Record(Sexes.male, 149.83),
+      ]),
+      new Discipline("4*25m Rückenlage ohne Armtätigkeit", [
+        new Record(Sexes.female, 82.19),
+        new Record(Sexes.male, 80.26),
+      ]),
+      new Discipline("4*25m Gurtretterstaffel", [
+        new Record(Sexes.female, 71.33),
+        new Record(Sexes.male, 71.13),
+      ]),
+      new Discipline("4*25m Rettungsstaffel", [
+        new Record(Sexes.female, 58.17),
+        new Record(Sexes.male, 56.74),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 13/14", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 130.44),
+        new Record(Sexes.male, 119.22),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 101.68),
+        new Record(Sexes.male, 90.31),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 119.03),
+        new Record(Sexes.male, 108.76),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 152.22),
+        new Record(Sexes.male, 134.79),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 15/16", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 124.07),
+        new Record(Sexes.male, 109.9),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 96.25),
+        new Record(Sexes.male, 77.92),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 111.31),
+        new Record(Sexes.male, 100.72),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 144.4),
+        new Record(Sexes.male, 121.44),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 17/18", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 116.7),
+        new Record(Sexes.male, 103.25),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 84.93),
+        new Record(Sexes.male, 69.98),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 103.9),
+        new Record(Sexes.male, 92.88),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 137.51),
+        new Record(Sexes.male, 112.91),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK Offen", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 111.1),
+        new Record(Sexes.male, 97.48),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 78.6),
+        new Record(Sexes.male, 64.04),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 96.0),
+        new Record(Sexes.male, 86.19),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 129.32),
+        new Record(Sexes.male, 108.85),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 100", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 124.45),
+        new Record(Sexes.male, 106.0),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 87.7),
+        new Record(Sexes.male, 72.04),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 110.8),
+        new Record(Sexes.male, 95.17),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 141.12),
+        new Record(Sexes.male, 118.95),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 120", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 126.17),
+        new Record(Sexes.male, 106.28),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 94.75),
+        new Record(Sexes.male, 72.04),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 115.12),
+        new Record(Sexes.male, 95.17),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 143.94),
+        new Record(Sexes.male, 119.75),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 140", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 130.84),
+        new Record(Sexes.male, 112.02),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 97.65),
+        new Record(Sexes.male, 74.79),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 115.97),
+        new Record(Sexes.male, 102.19),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 147.62),
+        new Record(Sexes.male, 122.19),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 170", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 131.37),
+        new Record(Sexes.male, 115.07),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 102.48),
+        new Record(Sexes.male, 81.26),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 121.22),
+        new Record(Sexes.male, 105.95),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 154.34),
+        new Record(Sexes.male, 125.69),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 200", 4, [
+      new Discipline("4*50m Hindernisstaffel", [
+        new Record(Sexes.female, 142.41),
+        new Record(Sexes.male, 117.04),
+      ]),
+      new Discipline("4*25m Puppenstaffel", [
+        new Record(Sexes.female, 116.05),
+        new Record(Sexes.male, 81.26),
+      ]),
+      new Discipline("4*50m Gurtretterstaffel", [
+        new Record(Sexes.female, 129.18),
+        new Record(Sexes.male, 108.37),
+      ]),
+      new Discipline("4*50m Rettungsstaffel", [
+        new Record(Sexes.female, 169.79),
+        new Record(Sexes.male, 130.77),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 240", 3, [
+      new Discipline("4*50m Freistilstaffel", [
+        new Record(Sexes.female, 158.4),
+        new Record(Sexes.male, 120.42),
+      ]),
+      new Discipline("4*25m Rückenlage ohne Armtätigkeit", [
+        new Record(Sexes.female, 112.01),
+        new Record(Sexes.male, 86.94),
+      ]),
+      new Discipline("4*25m Rettungsstaffel", [
+        new Record(Sexes.female, 79.0),
+        new Record(Sexes.male, 62.01),
+      ]),
+    ]),
+    new Agegroup(Types.team, "AK 280+", 3, [
+      new Discipline("4*50m Freistilstaffel", [
+        new Record(Sexes.female, 219.78),
+        new Record(Sexes.male, 151.51),
+      ]),
+      new Discipline("4*25m Rückenlage ohne Armtätigkeit", [
+        new Record(Sexes.female, 133.58),
+        new Record(Sexes.male, 110.04),
+      ]),
+      new Discipline("4*25m Rettungsstaffel", [
+        new Record(Sexes.female, 99.35),
+        new Record(Sexes.male, 74.78),
+      ]),
+    ]),
+  ]),
 ].sort((y1, y2) => y2.getYear() - y1.getYear());
