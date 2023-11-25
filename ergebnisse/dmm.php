@@ -60,6 +60,8 @@ function get()
 			array(2019, "Hagen", ""),
 			array(2020, "-<sup>2</sup>", ""),
 			array(2021, "Freiburg", ""),
+			array(2022, "Hannover", ""),
+			array(2023, "Hannover", ""),
 		);
 
         for ($x = count($values) - 1; $x >= 0; $x--) {
@@ -77,9 +79,16 @@ function get()
 	
 	      $nr = "";
 	      if ($value[0] != null) {
-		    $nr = $value[0] - 2018;
+		    $year = 0 + $value[0];
+			if ($year == 2020) {
+				$nr = "";
+			} else if ($year > 2020) {
+		        $nr = $year - 1972 - 1;
+			} else {
+		        $nr = $year - 1972;
+			}
 	      }
-	
+		  
 	      $name = "DMM_" . $year . "_Ergebnis_Einzel.pdf";
 	      if (file_exists("$prefix/$name")) {
 		    $einzel = $name;
@@ -97,7 +106,7 @@ function get()
 		    $og = $name;
 	      }
 		  
-		  $response .= "{ \"year\": $year, \"location\": \"$location\", \"homepage\": \"$url\", \"individual\": \"$einzel\", \"team\": \"$mannschaft\", \"lv\": \"$lv\", \"og\": \"$og\" }";
+		  $response .= "{ \"year\": $year, \"location\": \"$location\", \"homepage\": \"$url\", \"individual\": \"$einzel\", \"team\": \"$mannschaft\", \"lv\": \"$lv\", \"og\": \"$og\", \"number\": \"$nr\" }";
 		  if ($x > 0) {
 			  $response .= ", ";
 		  }

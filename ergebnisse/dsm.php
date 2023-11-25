@@ -43,8 +43,10 @@ function get()
             array(2017, "Andernach", "http://dlrg-andernach.de/?site=dsm"),
             array(2018, "Harsewinkel", "https://harsewinkel.dlrg.de/dsm-2018.html"),
             array(2019, "Sulzbach", "https://sulzbach.dlrg.de/"),
-            array(2020, "Wuppertal<sup>1</sup>", ""),
-            array(2021, "Magdeburg<sup>1</sup>", ""),
+            array(2020, "<sup>1</sup>", ""),
+            array(2021, "<sup>1</sup>", ""),
+            array(2022, "<sup>1</sup>", ""),
+            array(2023, "Harsewinkel", ""),
 		);
 
         for ($x = count($values) - 1; $x >= 0; $x--) {
@@ -62,7 +64,13 @@ function get()
 	
 	      $nr = "";
 	      if ($value[0] != null) {
-		    $nr = $value[0] - 2018;
+			if ($value[0] >= 2020 && $value[0] <= 2022) {
+				$nr = "";
+			} else if ($value[0] > 2022) {
+				$nr = $value[0] - 1987 - 3;
+			} else {
+		      $nr = $value[0] - 1987;
+			}
 	      }
 	
 	      $name = "DSM_" . $year . "_Ergebnis_Einzel.pdf";
@@ -82,7 +90,7 @@ function get()
 		    $og = $name;
 	      }
 		  
-		  $response .= "{ \"year\": $year, \"location\": \"$location\", \"homepage\": \"$url\", \"individual\": \"$einzel\", \"team\": \"$mannschaft\", \"lv\": \"$lv\", \"og\": \"$og\" }";
+		  $response .= "{ \"year\": $year, \"location\": \"$location\", \"homepage\": \"$url\", \"individual\": \"$einzel\", \"team\": \"$mannschaft\", \"lv\": \"$lv\", \"og\": \"$og\", \"number\": \"$nr\" }";
 		  if ($x > 0) {
 			  $response .= ", ";
 		  }

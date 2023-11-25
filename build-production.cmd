@@ -6,7 +6,6 @@ cd ..\web
 call build-production.cmd
 cd ..
 robocopy /MIR ergebnisse build\ergebnisse
-del build\ergebnisse\*.html
 rmdir /S /Q build\ergebnisse\.vscode
 call npx minify -v -r -o build/ --match=\.html --js-keep-var-names --html-keep-document-tags --html-keep-end-tags build/
 call npx minify -v -r -o build/ --match=\.js --js-keep-var-names --html-keep-document-tags --html-keep-end-tags build/

@@ -7,7 +7,6 @@ const listCompetitions = async () => {
     const data = await response.json(); //extract JSON from the http response
 
     let rows = "";
-    let number = data.data.length;
 
     for (const d in data.data) {
         const competition = data.data[d];
@@ -15,6 +14,8 @@ const listCompetitions = async () => {
         let location = competition.location;
         let individual = "-";
         let team = "-";
+        let number = competition.number;
+
         if (competition.url != "" && (('' + competition.url) != 'undefined')) {
             location = "<a href=\"" + competition.url + "\">" + competition.location + "</a>";
         }
@@ -31,8 +32,6 @@ const listCompetitions = async () => {
         rows += "<td style=\"text-align: center; padding-right: 0.2em;\">" + team + "</td>";
         rows += "<td style=\"border-right: 1px solid #0077BB; text-align: right; padding-right: 0.2em;\">" + number + "</td>";
         rows += "</tr>";
-
-        number--;
     }
 
     let table = '<table style="border: 1px solid #0077BB; width: min(99%, 75em); border-collapse: collapse;">';
