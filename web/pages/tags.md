@@ -11,7 +11,7 @@ search: false
 {% for tag in tags_list %}{% if tag %}<h3 id="{{ tag | replace: '/', '-' }}" class="linked-section">{{ tag }}</h3>
 <div class="post-list" style="margin-bottom:40px">
     {% for post in site.tags[tag] %}<div class="tag-entry">
-    <a href="{{- site.url -}}{{site.baseurl}}{{- post.url -}}">{{- post.title -}}</a>
+    <a href="{{site.baseurl}}{{- post.url -}}">{{- post.title -}}</a>
     <time datetime="{{- post.date | date_to_xmlschema -}}"> {{- post.date | date: "%d.%m.%Y" -}}</time>
 </div>{%- endfor -%}
 {% for doc in site.docs %}{% if doc.tags contains tag %}
