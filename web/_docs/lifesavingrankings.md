@@ -5,7 +5,7 @@ tags:
 description: Lifesaving Rankings sammelt Ergebnisse von Wettkämpfen im Rettungssport
 ---
 
-# Lifesaving Rankings
+# Lifesaving Rankings (2021 eingestellt)
 
 Lifesaving Rankings sammelt Ergebnisse von Wettkämpfen im Rettungssport.
 

@@ -11,6 +11,7 @@ Die Anleitung von JAuswertung ist im Installationsprogramm enthalten, um auch of
 
 ## JAuswertung
 
+- [Meldeunterlagen](jauswertung/anleitungen/meldeunterlagen.html)
 - [Startkartendruck](jauswertung/anleitungen/startkartendruck.html)
 - [Checksummen](jauswertung/anleitungen/checksummen.html)
 - Meldung von Mannschaftsmitgliedern

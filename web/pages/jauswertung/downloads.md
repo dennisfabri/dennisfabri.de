@@ -6,6 +6,8 @@ permalink: /jauswertung/downloads.html
 
 # Downloads
 
+## JAuswertung
+
 <!-- markdownlint-disable MD033 -->
 <script src="{{ site.baseurl }}/assets/js/githubreleaseinfo.js"></script>
 <div id='infobox-downloads'>
@@ -39,3 +41,7 @@ $(document).ready(function () {
 });
 </script>
 <!-- markdownlint-enable MD033 -->
+
+## Meldeunterlagen
+
+[Vorgefertigte Meldeunterlagen](/assets/Meldeunterlagen-20240106.zip) (Stand 06.01.2024)

@@ -5,7 +5,7 @@ tags:
 description: Extrahiert Ergebnisse aus PDF-Dateien für Lifesavingrankings
 ---
 
-# Competition Parser
+# Competition Parser (2022 eingestellt)
 
 Extrahiert Ergebnisse aus PDF-Dateien für Lifesavingrankings.
 

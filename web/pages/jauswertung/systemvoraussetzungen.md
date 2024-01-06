@@ -8,39 +8,26 @@ permalink: /jauswertung/systemvoraussetzungen.html
 
 ## Betriebssysteme
 
-Unterstützt:
-
-- Windows 10 (x64)
+- Windows 10/11 (x64)
 - Linux
 - MacOS X
 
- Empfohlen:
+## Empfohlene Hardwarekonfiguration
 
-- Windows 10 (x64)
-- Linux
+- Prozessor mit 2Ghz
+- 8GB Arbeitsspeicher
+- 10GB MB freie Festplattenkapazität
+- FullHD-Auflösung von 1920x1080 Pixel (1080p)
+- Drucker
+- QR-Code-Scanner
 
-Systemkonfiguration
-Minimalkonfiguration
+## Zusätzliches
 
-- Hardware
-  - Prozessor mit 1Ghz
-  - 2GB Arbeitsspeicher
-  - 2GB freie Festplattenkapazität
-  - Auflösung von 1280x1024
+Auf dem Rechner sollten Programme zum Anzeigen folgender Dateitypen installiert sein:
 
- Empfohlene Konfiguration
-
-- Hardware
-  - Prozessor mit 2Ghz
-  - 4GB Arbeitsspeicher
-  - 10GB MB freie Festplattenkapazität
-  - FullHD-Auflösung von 1920x1080 Pixel (1080p)
-  - Drucker
-  - QR-Code-Scanner
-- Software
-  - zur Anzeige von HTML-Dateien
-  - zur Bearbeitung von Excel- und CSV-Dateien
-  - zur Anzeige von PDF-Dateien
+  - HTML-Dateien
+  - Excel- und CSV-Dateien
+  - PDF-Dateien
 
 ## Einplatinencomputer (Raspberry Pi & Co.)
 
@@ -50,7 +37,7 @@ schildern:
 
 ### Die gute Nachricht
 
-Es funktioniert. Mit installiertem Desktop kann JAuswertung auf einem Raspberry Pi zum Laufen gebracht werden.
+Es funktioniert. Mit installiertem Desktop kann JAuswertung auf einem Raspberry Pi ohne Anpassungen gestartet werden werden.
 
 ### Die schlechten Nachrichten
 

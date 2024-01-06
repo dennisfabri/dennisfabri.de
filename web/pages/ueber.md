@@ -21,8 +21,6 @@ Mittlerweile sind darüber hinaus auch weitere Angebote entstanden:
 
 - [Punktetabellen](rettungssport/punktetabellen.html) (nach DLRG-Regelwerk mit aktuellen Rec-Werten zum Download)
 - [Punkterechner](rettungssport/punkterechner.html) (nach DLRG-Regelwerk mit aktuellen Rec-Werten)
-- [Punkterechner App](rettungssport/punkterechner-app.html) (nach DLRG-Regelwerk mit aktuellen Rec-Werten für Android
-  und iOS)
 
 ## Mitarbeit willkommen
 

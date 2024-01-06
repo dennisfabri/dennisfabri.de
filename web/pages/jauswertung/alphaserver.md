@@ -18,14 +18,15 @@ Zeiten werden dabei gesammelt und über einen integrierten Webserver als XML-Dat
 AlphaServer ist Teil des Setups von JAuswertung. Eine Verknüpfung mit AlphaServer wird automatisch angelegt.
 Weitere Schritte sind nicht notwendig.
 
-## Installation auf einem Raspberry Pi
+## Installation auf einem Raspberry Pi (o.ä.)
+
+**Hinweis:** Die Nutzung von AlphaServer auf Einplatinencomputern wird nicht empfohlen. Die Erfahrung hat gezeigt, dass die
+Kommunikation mit einer ARES21 oder Quantum in der Regel nicht funktioniert.
 
 Diese Anleitung geht von einem frisch installierten und aktualisiertem Raspian mit Desktop auf einem Raspberry Pi aus.
 Anleitungen dazu finden sich zu genüge im Netz. Grundsätzliche Linux-Kenntnisse werden vorausgesetzt.
 
-Da der Raspberry Pi selbst keinen RS-232-Anschluss bietet, wird ein USB-RS232-Adapter benötigt2. Diese müssen nicht mehr
-als 10,- € kosten und es gibt sie zum Teil auch noch billiger (welcher Adapter mit dem Raspberry Pi kompatibel sind, muss
-im Einzelfall geprüft werden).
+Da der Raspberry Pi selbst keinen RS-232-Anschluss bietet, wird ein USB-RS232-Adapter benötigt.
 
 ### Teil 1: Installation benötigter Bibliotheken
 
