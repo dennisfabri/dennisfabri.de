@@ -10,9 +10,20 @@ p {
     background-color: $site-color!important;
 }
 
+.post-preview {
+    margin-bottom: 2rem;
+}
+
 .post-footer {
+    text-align: end;
     color: #99a2c2;
     font-size: small;
+    margin-top: -0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.post-preview > hr {
+    margin-top: 0em;
 }
 
 footer * a:link {

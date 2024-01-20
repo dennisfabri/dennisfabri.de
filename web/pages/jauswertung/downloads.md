@@ -44,4 +44,4 @@ $(document).ready(function () {
 
 ## Meldeunterlagen
 
-[Vorgefertigte Meldeunterlagen](/assets/Meldeunterlagen-20240106.zip) (Stand 06.01.2024)
+[Vorgefertigte Meldeunterlagen](/assets/Meldeunterlagen-20240120.zip) (Stand 20.01.2024)

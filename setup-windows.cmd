@@ -1,6 +1,7 @@
 @echo off
 gem install jekyll bundler
 cd web
+bundler update --bundler
 bundle install
 cd ..
 

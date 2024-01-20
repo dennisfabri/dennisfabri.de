@@ -6,7 +6,7 @@ permalink: /jauswertung/anleitungen/meldeunterlagen.html
 
 # Meldeunterlagen
 
-Die [vorgefertigten Meldeunterlagen](/assets/Meldeunterlagen-20240106.zip) sind so gestaltet, dass die Meldungen direkt mit JAuswertung importiert werden können. Die Dateien können zusammen mit der Ausschreibung zur elektronischen Meldung ausgegeben werden.
+Die [vorgefertigten Meldeunterlagen](/assets/Meldeunterlagen-20240120.zip) sind so gestaltet, dass die Meldungen direkt mit JAuswertung importiert werden können. Die Dateien können zusammen mit der Ausschreibung zur elektronischen Meldung ausgegeben werden.
 
 
 Die Meldeunterlagen enthalten vorgefertigte Tabellen, in denen die benötigten Informationen übersichtlich abgefragt werden. Bitte beachten Sie, dass die Daten möglichst korrekt eingetragen werden. JAuswertung beherrscht bereits einige Abweichungen, so dass z.B. „4x50m Hindernis“ auch als „4*50m Hindernisstaffel“ erkannt werden. Es ist jedoch nicht möglich alle Abweichungen zu erkennen.
@@ -52,3 +52,9 @@ Diese Meldeunterlagen enthalten ein Tabellenblatt, in das alle Altersklassen ein
 Diese Meldeunterlagen enthalten eine Tabelle für alle Altersklassen. Die Meldung ist ohne Meldezeiten vorgesehen und daher vor allem für Freundschaftswettkämpfe (FWKs) interessant, kann aber auch für Ortsgruppen- und Bezirksmeisterschaften genutzt werden, wenn keine Meldezeiten gewünscht sind.
 
 **Anmerkung:** Bitte beachten Sie, dass diese Vorlage für Einzelwettkämpfe nur dann funktioniert, wenn in der offenen Altersklasse keine Wahlmöglichkeit besteht. Dazu müssen Sie das Regelwerk des jeweiligen Wettkampfs entsprechend anpassen.
+
+## Erstellung von Meldeunterlagen
+
+Eigene Meldeunterlagen können auf unterschiedliche Arten erstellt werden. Zum einen können die bereitgestellten Unterlagen angepasst werden. Zum anderen besteht die Möglichkeit Meldeunterlagen aus JAuswertung zu exportieren.
+
+Für letzteres muss zuerst der Wettkampf in JAuswertung nach Wunsch angelegt und konfiguriert werden. In diesem Wettkampf muss dann ein Sportler/eine Mannschaft angelegt werden. Daraufhin kann die Meldung exportiert werden. Diese Datei kann zum einen direkt wieder zum Import genutzt werden. Es besteht aber auch die Möglichkeit nicht benötigte Spalten zu löschen. Sollten zu viele Spalten gelöscht worden sein, wird der Import mit einer entsprechenden Fehlermeldung fehlschlagen. In der Regel geht die fehlende Spalte daraus direkt hervor.
