@@ -6,34 +6,14 @@ permalink: /jauswertung/systemvoraussetzungen.html
 
 # Systemvoraussetzungen
 
-## Betriebssysteme
-
-- Windows 10/11 (x64)
-- Linux
-- MacOS X
-
-## Empfohlene Hardwarekonfiguration
-
-- Prozessor mit 2Ghz
-- 8GB Arbeitsspeicher
-- 10GB MB freie Festplattenkapazität
-- FullHD-Auflösung von 1920x1080 Pixel (1080p)
-- Drucker
-- QR-Code-Scanner
-
-## Zusätzliches
-
-Auf dem Rechner sollten Programme zum Anzeigen folgender Dateitypen installiert sein:
-
-  - HTML-Dateien
-  - Excel- und CSV-Dateien
-  - PDF-Dateien
+JAuswertung unterstützt die gängigen Betriebssystem (z.B. Windows, Linux und MacOS).
+Sofern die benötigte Java-Version vom Betriebssystem unterstützt wird, stellt JAuswertung keine besonderen Ansprüche an den eingesetzten Rechner.
 
 ## Einplatinencomputer (Raspberry Pi & Co.)
 
 Da aktuellen Minirechner wie der Raspberry Pi viel Aufmerksamkeit genießen, kommt sicherlich der ein oder andere auf die
 Idee, JAuswertung auf einem Minirechner zu nutzen. Ich möchte hier meine Erfahrungen mit einem Raspberry Pi (Modell 3) kurz
-schildern:
+schildern.
 
 ### Die gute Nachricht
 
