@@ -11,13 +11,17 @@ Die Anleitung von JAuswertung ist im Installationsprogramm enthalten, um auch of
 
 ## JAuswertung
 
+- [Anleitung](jauswertung/anleitungen/jauswertung.html)
+- [Ablauf eines Wettkampfs](jauswertung/anleitungen/ablauf.html)
 - [Meldeunterlagen](jauswertung/anleitungen/meldeunterlagen.html)
 - [Startkartendruck](jauswertung/anleitungen/startkartendruck.html)
 - [Checksummen](jauswertung/anleitungen/checksummen.html)
 - Meldung von Mannschaftsmitgliedern
   - [Ausrichter](jauswertung/anleitungen/mannschaftsmitglieder-ausrichter.html)
   - [Teammanager](jauswertung/anleitungen/mannschaftsmitglieder-teammanager.html)
+- [FAQ](jauswertung/anleitungen/faq.html)
 
 ## Notizen
 
 - [Qualifikation im Freigewässer](jauswertung/anleitungen/qualifikation-im-freiwasser.html)
+- [HTML-Vorlagen](jauswertung/anleitungen/html-vorlagen.html)
