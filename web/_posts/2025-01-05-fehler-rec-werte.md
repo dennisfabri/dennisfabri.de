@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Falsche Rec-Werte für 2025
+title: Übertragungsfehler Rec-Werte 2025
 date: 2025-01-05 01:00
 category: JAuswertung
 author: Dennis Fabri

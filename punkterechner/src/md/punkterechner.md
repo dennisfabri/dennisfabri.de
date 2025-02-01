@@ -20,5 +20,5 @@ Durchgang die Punkte für alle sechs Disziplinen ermitteln kann.
 
 <div id="Calculator" />
 
-<script src="/assets/js/Chart.bundle.min.js"></script>
+<script src="/assets/js/chart.umd.js"></script>
 <script src="/assets/js/calculator.bundle.js"></script>

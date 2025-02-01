@@ -110,6 +110,9 @@ export class TimesHistory {
                 datasets: this.disciplines.map(d => d.getChartData())
             },
             options: {
+                animation: {
+                    duration: 0
+                },
                 legend: {
                     align: "start",
                     labels: {
@@ -125,37 +128,36 @@ export class TimesHistory {
                     }
                 },
                 scales: {
-                    yAxes: [
-                        {
-                            id: 'left',
-                            position: 'left',
-                            suggestedMin: 0,
-                            scaleLabel: {
-                                display: 'true',
-                                labelString: 'pro Disziplin',
+                    left: {
+                        id: 'left',
+                        position: 'left',
+                        suggestedMin: 0,
+                        scaleLabel: {
+                            display: 'true',
+                            labelString: 'pro Disziplin',
 
-                            },
-                            ticks: {
-                                min: 0,
-                            }
                         },
-                        {
-                            id: 'right',
-                            position: 'right',
-                            scaleLabel: {
-                                display: 'true',
-                                labelString: 'Summe',
-                                fontColor: "#999999"
-                            },
-                            ticks: {
-                                min: 0,
-                                fontColor: "#999999"
-                            },
-                            gridLines: {
-                                borderDash: [5, 5],
-                            }
+                        ticks: {
+                            min: 0,
+                        }
+                    },
+                    right: {
+                        id: 'right',
+                        position: 'right',
+                        suggestedMin: 0,
+                        scaleLabel: {
+                            display: 'true',
+                            labelString: 'Summe',
+                            fontColor: "#999999"
                         },
-                    ]
+                        ticks: {
+                            min: 0,
+                            fontColor: "#999999"
+                        },
+                        gridLines: {
+                            borderDash: [5, 5],
+                        }
+                    }
                 }
             }
         }

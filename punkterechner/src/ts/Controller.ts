@@ -4,7 +4,7 @@ import { Sexes } from "./Sexes";
 import { Agegroup } from "./Agegroup";
 import { Year } from "./Year";
 import { YearAgegroup, TimesHistory } from "./TimesHistory";
-import { Chart } from "../../node_modules/chart.js/dist/Chart.bundle.js";
+import { Chart } from "../../node_modules/chart.js/dist/chart.js";
 
 export class Controller {
     private parent: HTMLElement | null;

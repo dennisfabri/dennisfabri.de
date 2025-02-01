@@ -12,8 +12,7 @@ unless(-e $builddirectory or mkdir $builddirectory) {
 
 print "Copying resources\n";
 copy("src/html/punkterechner.html","build/index.html") or die "Copy failed: $!";
-copy("node_modules/chart.js/dist/Chart.bundle.min.js","build") or die "Copy failed: $!";
-copy("node_modules/chart.js/dist/Chart.bundle.js","build") or die "Copy failed: $!";
+copy("node_modules/chart.js/dist/chart.umd.js","build") or die "Copy failed: $!";
 
 print "Compiling\n";
 system("npx tsc");
@@ -50,7 +49,7 @@ copy("./src/md/punkterechner.md","./build/punkterechner.md") or die "Copy failed
 print "Updating jekyll pages\n";
 
 copy("./build/punkterechner.md","../web/pages/rettungssport/punkterechner.md") or die "Copy failed: $!";
-copy("./build/Chart.bundle.min.js","../web/assets/js/Chart.bundle.min.js") or die "Copy failed: $!";
+copy("./build/chart.umd.js","../web/assets/js/chart.umd.js") or die "Copy failed: $!";
 copy("./build/calculator.bundle.js","../web/assets/js/calculator.bundle.js") or die "Copy failed: $!";
 
 print "Finished\n";
