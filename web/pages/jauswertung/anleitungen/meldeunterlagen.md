@@ -6,7 +6,7 @@ permalink: /jauswertung/anleitungen/meldeunterlagen.html
 
 # Meldeunterlagen
 
-Die [vorgefertigten Meldeunterlagen](/assets/Meldeunterlagen-20240120.zip) sind so gestaltet, dass die Meldungen direkt mit JAuswertung importiert werden können. Die Dateien können zusammen mit der Ausschreibung zur elektronischen Meldung ausgegeben werden.
+Die [vorgefertigten Meldeunterlagen](/jauswertung/downloads.html) sind so gestaltet, dass die Meldungen direkt mit JAuswertung importiert werden können. Die Dateien können zusammen mit der Ausschreibung zur elektronischen Meldung ausgegeben werden.
 
 
 Die Meldeunterlagen enthalten vorgefertigte Tabellen, in denen die benötigten Informationen übersichtlich abgefragt werden. Bitte beachten Sie, dass die Daten möglichst korrekt eingetragen werden. JAuswertung beherrscht bereits einige Abweichungen, so dass z.B. „4x50m Hindernis“ auch als „4*50m Hindernisstaffel“ erkannt werden. Es ist jedoch nicht möglich alle Abweichungen zu erkennen.

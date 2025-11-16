@@ -11,14 +11,13 @@ search: false
 
 Angaben gemäß § 5 TMG:
 
-  Dennis Fabri  
-  Pfarrer-Rüter-Weg 13  
-  44267 Dortmund  
+  Dennis Fabri
+  Pfarrer-Rüter-Weg 13
+  44267 Dortmund
 
 Kontakt:
 
-  Telefon: +49 (177) 3206023  
-  E-Mail: info@dennisfabri.de  
+  E-Mail: info@dennisfabri.de
 
 *Hinweis: Anfragen zu den bereitgestellten Programmen und Informationen
 werden ausschließlich per E-Mail entgegengenommen.*

@@ -91,7 +91,6 @@ Dennis Fabri
 Pfarrer-Rüter-Weg 13  
 44267 Dortmund
 
-Telefon: +491773206023  
 E-Mail: info@dennisfabri.de
 
  Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke
