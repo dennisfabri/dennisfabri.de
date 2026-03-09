@@ -18,6 +18,6 @@ cd ..
 #cd ..
 #
 
-npm install -g minify
-npm install -g typescript
+sudo npm install -g minify
+sudo npm install -g typescript
 

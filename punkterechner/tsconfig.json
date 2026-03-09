@@ -12,7 +12,8 @@
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
       "target": "ES2015",
-      "outDir": "build/js"
+      "outDir": "build/js",
+      "rootDir": "src/ts"
     },
     "include": ["src/ts/**/*.ts"],
     "exclude": ["node_modules", "**/*.spec.ts"]

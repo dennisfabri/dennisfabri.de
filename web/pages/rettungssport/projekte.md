@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Projekte
-permalink: /projekte.html
+permalink: /rettungssport/projekte.html
 ---
 
 # Projekte
 
 Auf dieser Seite werden Projekte anderer Personen oder Organisationen aufgeführt, die im Rettungssport
-interessant sind. Die Projekte sind weitestgehend unabhängig und ohne direkten Bezug zu {{ site.domain }},
+interessant sind. Die Projekte sind weitestgehend unabhängig und/oder ohne direkten Bezug zu {{ site.domain }},
 werden hier aber wegen ihrer Relevanz für den Rettungssport aufgeführt:
 
 <!-- markdownlint-disable MD033 -->

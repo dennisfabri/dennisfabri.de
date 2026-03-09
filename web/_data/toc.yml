@@ -16,8 +16,6 @@
       url: "jauswertung/installation.html"
     - title: "Systemvoraussetzungen"
       url: "jauswertung/systemvoraussetzungen.html"
-    - title: "Entwicklungsstatus"
-      url: "jauswertung/entwicklungsstatus.html"
     - title: "AlphaServer"
       url: "jauswertung/alphaserver.html"
 - title: "Anleitungen"
@@ -42,7 +40,7 @@
     - title: "Punktetabellen"
       url: "rettungssport/punktetabellen.html"
     - title: "Projekte"
-      url: "projekte.html"
+      url: "rettungssport/projekte.html"
 - title: "Ergebnisse"
   links:
     - title: "DEM"
