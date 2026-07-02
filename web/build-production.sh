@@ -1,5 +1,4 @@
 #!/bin/sh
-rbenv local 3.4.1
 gem install jekyll bundler
 bundle install
 

@@ -1,23 +1,25 @@
 #!/bin/sh
-rbenv install 3.4.1
 
+# Clone jekyll-external-links plugin if not present
+if [ ! -d "web/_plugins/jekyll-external-links" ]; then
+    cd web/_plugins
+    git clone https://github.com/riboseinc/jekyll-external-links.git
+    cd ../..
+fi
+
+# Install Ruby gems for the Jekyll site
 cd web
-rbenv local 3.4.1
 gem update --system
 gem install jekyll bundler
 bundler update --bundler
 bundle install
+npm install
 cd ..
 
-
-#sudo apt-get install ruby ruby-bundler ruby-dev
-#gem install jekyll bundler
-#cd web
-#### bundler update --bundler
-#bundle install
-#cd ..
-#
+# Install npm dependencies for the score calculator
+cd punkterechner
+npm install
+cd ..
 
 sudo npm install -g minify
 sudo npm install -g typescript
-

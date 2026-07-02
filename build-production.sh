@@ -1,5 +1,4 @@
 #!/bin/sh
-export PATH="$HOME/snap/code/217/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
 rm -r build
 cd punkterechner
